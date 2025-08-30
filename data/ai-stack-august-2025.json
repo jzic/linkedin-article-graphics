@@ -1,0 +1,385 @@
+{
+  "lastUpdated": "2025-08-25",
+  "aiStack": {
+    "infrastructure": {
+      "name": "GPU & Hardware Layer",
+      "description": "Compute infrastructure powering AI",
+      "color": "#FFD700",
+      "publicCompanies": [
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "marketCap": 4413,
+          "logo": "/company-logos/nvidia.png",
+          "dominance": "92% GPU market share"
+        },
+        {
+          "name": "AMD",
+          "ticker": "AMD", 
+          "marketCap": 210,
+          "logo": "/company-logos/amd.png",
+          "dominance": "39.4% CPU server share"
+        },
+        {
+          "name": "Intel",
+          "ticker": "INTC",
+          "marketCap": 86,
+          "logo": "/company-logos/intel.png"
+        },
+        {
+          "name": "Broadcom",
+          "ticker": "AVGO",
+          "marketCap": 1100,
+          "logo": "/company-logos/broadcom.png"
+        },
+        {
+          "name": "ARM",
+          "ticker": "ARM",
+          "marketCap": 155,
+          "logo": "/company-logos/arm.png"
+        },
+        {
+          "name": "Marvell",
+          "ticker": "MRVL",
+          "marketCap": 75,
+          "logo": "/company-logos/marvell.png"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Cerebras",
+          "valuation": 4.1,
+          "logo": "/company-logos/cerebras.png",
+          "description": "Wafer-scale AI chips"
+        },
+        {
+          "name": "Graphcore",
+          "valuation": 2.8,
+          "logo": "/company-logos/graphcore.png",
+          "description": "IPU processors"
+        },
+        {
+          "name": "SambaNova",
+          "valuation": 5.1,
+          "logo": "/company-logos/sambanova.png",
+          "description": "Dataflow architecture"
+        },
+        {
+          "name": "Groq",
+          "valuation": 2.8,
+          "logo": "/company-logos/groq.png",
+          "description": "LPU inference chips"
+        },
+        {
+          "name": "Tenstorrent",
+          "valuation": 2.6,
+          "logo": "/company-logos/tenstorrent.png",
+          "description": "RISC-V AI processors"
+        },
+        {
+          "name": "d-Matrix",
+          "valuation": 0.7,
+          "logo": "/company-logos/dmatrix.png",
+          "description": "In-memory computing"
+        }
+      ]
+    },
+    "cloud": {
+      "name": "Cloud & Compute Layer",
+      "description": "AI infrastructure and services",
+      "color": "#7C3AED",
+      "publicCompanies": [
+        {
+          "name": "Microsoft Azure",
+          "ticker": "MSFT",
+          "marketCap": 3200,
+          "logo": "/company-logos/microsoft.png",
+          "aiRevenue": "40B+ AI revenue"
+        },
+        {
+          "name": "Amazon AWS",
+          "ticker": "AMZN",
+          "marketCap": 1900,
+          "logo": "/company-logos/aws.png",
+          "aiRevenue": "Bedrock platform"
+        },
+        {
+          "name": "Google Cloud",
+          "ticker": "GOOGL",
+          "marketCap": 2100,
+          "logo": "/company-logos/google.png",
+          "aiRevenue": "Vertex AI platform"
+        },
+        {
+          "name": "Oracle",
+          "ticker": "ORCL",
+          "marketCap": 380,
+          "logo": "/company-logos/oracle.png"
+        },
+        {
+          "name": "Snowflake",
+          "ticker": "SNOW",
+          "marketCap": 52,
+          "logo": "/company-logos/snowflake.png"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "CoreWeave",
+          "valuation": 19,
+          "logo": "/company-logos/coreweave.png",
+          "description": "GPU cloud specialist",
+          "growth": "300% YoY"
+        },
+        {
+          "name": "Lambda Labs",
+          "valuation": 1.5,
+          "logo": "/company-logos/lambda.png",
+          "description": "GPU cloud for AI"
+        },
+        {
+          "name": "Together AI",
+          "valuation": 1.3,
+          "logo": "/company-logos/together.png",
+          "description": "Decentralized AI compute"
+        },
+        {
+          "name": "Crusoe Energy",
+          "valuation": 1.8,
+          "logo": "/company-logos/crusoe.png",
+          "description": "Clean compute infrastructure"
+        },
+        {
+          "name": "Foundry",
+          "valuation": 0.35,
+          "logo": "/company-logos/foundry.png",
+          "description": "AI compute marketplace"
+        }
+      ]
+    },
+    "models": {
+      "name": "Foundation Models Layer",
+      "description": "Large language and multimodal models",
+      "color": "#1464e9",
+      "publicCompanies": [
+        {
+          "name": "Google (Gemini)",
+          "ticker": "GOOGL",
+          "marketCap": 2100,
+          "logo": "/company-logos/google.png",
+          "model": "Gemini 2.0"
+        },
+        {
+          "name": "Meta (Llama)",
+          "ticker": "META",
+          "marketCap": 1300,
+          "logo": "/company-logos/meta.png",
+          "model": "Llama 3.1 405B"
+        },
+        {
+          "name": "Microsoft",
+          "ticker": "MSFT",
+          "marketCap": 3200,
+          "logo": "/company-logos/microsoft.png",
+          "model": "Phi-3, Copilot"
+        },
+        {
+          "name": "Amazon",
+          "ticker": "AMZN",
+          "marketCap": 1900,
+          "logo": "/company-logos/amazon.png",
+          "model": "Titan, Nova"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "OpenAI",
+          "valuation": 300,
+          "logo": "/company-logos/openai.png",
+          "model": "GPT-4o, o1",
+          "revenue": "$13B ARR",
+          "funding": "$8.3B (Aug 2025)",
+          "growthRate": "Path to $1T"
+        },
+        {
+          "name": "Anthropic",
+          "valuation": 170,
+          "logo": "/company-logos/anthropic.png",
+          "model": "Claude 3.5 Sonnet",
+          "funding": "$5B raising (Aug 2025)",
+          "arr": "$5B ARR (from $1B in Dec)",
+          "growthRate": "1000%+ growth"
+        },
+        {
+          "name": "Mistral AI",
+          "valuation": 6,
+          "logo": "/company-logos/mistral.png",
+          "model": "Large 2, Pixtral",
+          "funding": "$645M (2025)"
+        },
+        {
+          "name": "Cohere",
+          "valuation": 5.5,
+          "logo": "/company-logos/cohere.png",
+          "model": "Command R+"
+        },
+        {
+          "name": "Inflection AI",
+          "valuation": 4,
+          "logo": "/company-logos/inflection.png",
+          "model": "Pi"
+        },
+        {
+          "name": "AI21 Labs",
+          "valuation": 1.4,
+          "logo": "/company-logos/ai21.png",
+          "model": "Jamba"
+        },
+        {
+          "name": "Aleph Alpha",
+          "valuation": 0.5,
+          "logo": "/company-logos/aleph.png",
+          "model": "Luminous"
+        },
+        {
+          "name": "01.AI",
+          "valuation": 2.5,
+          "logo": "/company-logos/01ai.png",
+          "model": "Yi-Large"
+        }
+      ]
+    },
+    "applications": {
+      "name": "Applications Layer",
+      "description": "AI-powered products and services",
+      "color": "#00FF94",
+      "publicCompanies": [
+        {
+          "name": "Adobe",
+          "ticker": "ADBE",
+          "marketCap": 240,
+          "logo": "/company-logos/adobe.png",
+          "product": "Firefly, Creative Cloud AI"
+        },
+        {
+          "name": "Salesforce",
+          "ticker": "CRM",
+          "marketCap": 290,
+          "logo": "/company-logos/salesforce.png",
+          "product": "Einstein AI, Agentforce"
+        },
+        {
+          "name": "ServiceNow",
+          "ticker": "NOW",
+          "marketCap": 180,
+          "logo": "/company-logos/servicenow.png",
+          "product": "Now Assist"
+        },
+        {
+          "name": "Palantir",
+          "ticker": "PLTR",
+          "marketCap": 95,
+          "logo": "/company-logos/palantir.png",
+          "product": "AIP Platform"
+        },
+        {
+          "name": "Datadog",
+          "ticker": "DDOG",
+          "marketCap": 42,
+          "logo": "/company-logos/datadog.png",
+          "product": "AI Observability"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Midjourney",
+          "valuation": 10,
+          "logo": "/company-logos/midjourney.png",
+          "product": "Image generation",
+          "users": "20M+"
+        },
+        {
+          "name": "Character.AI",
+          "valuation": 5,
+          "logo": "/company-logos/character.png",
+          "product": "AI companions",
+          "users": "20M MAU"
+        },
+        {
+          "name": "Perplexity",
+          "valuation": 3,
+          "logo": "/company-logos/perplexity.png",
+          "product": "AI search",
+          "users": "15M MAU"
+        },
+        {
+          "name": "Jasper",
+          "valuation": 1.5,
+          "logo": "/company-logos/jasper.png",
+          "product": "AI copywriting"
+        },
+        {
+          "name": "Runway",
+          "valuation": 1.5,
+          "logo": "/company-logos/runway.png",
+          "product": "Video generation"
+        },
+        {
+          "name": "Pika Labs",
+          "valuation": 0.5,
+          "logo": "/company-logos/pika.png",
+          "product": "Video AI"
+        },
+        {
+          "name": "Glean",
+          "valuation": 2.2,
+          "logo": "/company-logos/glean.png",
+          "product": "Enterprise search"
+        },
+        {
+          "name": "Hugging Face",
+          "valuation": 4.5,
+          "logo": "/company-logos/huggingface.png",
+          "product": "Model hub & tools"
+        },
+        {
+          "name": "Scale AI",
+          "valuation": 13.8,
+          "logo": "/company-logos/scale.png",
+          "product": "Data labeling & RLHF"
+        },
+        {
+          "name": "Tome",
+          "valuation": 0.3,
+          "logo": "/company-logos/tome.png",
+          "product": "AI presentations"
+        },
+        {
+          "name": "Writer",
+          "valuation": 1.9,
+          "logo": "/company-logos/writer.png",
+          "product": "Enterprise AI"
+        },
+        {
+          "name": "Synthesia",
+          "valuation": 2.1,
+          "logo": "/company-logos/synthesia.png",
+          "product": "AI avatars"
+        }
+      ]
+    }
+  },
+  "marketInsights": {
+    "totalPublicMarketCap": 15651,
+    "totalPrivateValuation": 468.5,
+    "privateCompanyCount": 38,
+    "publicCompanyCount": 20,
+    "keyTakeaways": [
+      "NVIDIA alone ($4.4T) is worth more than all AI startups combined",
+      "OpenAI + Anthropic ($327B combined) approaching Meta's market cap",
+      "80% of foundation model innovation happens in private companies",
+      "Applications layer is 75% private companies by count",
+      "Private AI companies raised $100B+ in 2024-2025"
+    ]
+  }
+}

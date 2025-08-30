@@ -1,0 +1,28 @@
+Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes
+Nvidia,Public,NVDA,4280,GPU computing for quantum simulation
+Microsoft,Public,MSFT,3410,Azure Quantum cloud platform
+Google,Public,GOOGL,1850,Quantum AI and Sycamore processor
+Amazon,Public,AMZN,1050,AWS Braket quantum cloud
+IBM,Public,IBM,226,Quantum Network and processors
+Honeywell,Public,HON,139,Quantum solutions division
+Intel,Public,INTC,106,Quantum computing research
+IonQ,Public,IONQ,12,Pure-play quantum computing
+D-Wave,Public,QBTS,5.11,Quantum annealing systems
+Rigetti,Public,RGTI,4.88,Quantum cloud services
+Quantum Computing Inc,Public,QUBT,2.32,Quantum software
+Arqit Quantum,Public,ARQQ,0.385,Quantum encryption
+PsiQuantum,Private,,6,Photonic quantum computing
+Atom Computing,Private,,1.2,Neutral atom quantum
+Xanadu,Private,,1,Photonic quantum
+QuEra,Private,,1,Neutral atom arrays
+Infleqtion,Private,,0.8,Cold atom quantum
+Oxford Quantum Circuits,Private,,0.65,Superconducting quantum
+Quantum Machines,Private,,0.5,Quantum control systems
+SandboxAQ,Private,,0.5,Quantum + AI applications
+Pasqal,Private,,0.45,Neutral atom quantum
+Alice & Bob,Private,,0.35,Error-corrected qubits
+Universal Quantum,Private,,0.3,Trapped ion quantum
+Quantum Motion,Private,,0.25,Silicon quantum
+Q-CTRL,Private,,0.2,Quantum control software
+Classiq,Private,,0.15,Quantum software platform
+Nord Quantique,Private,,0.024,Bosonic quantum computing

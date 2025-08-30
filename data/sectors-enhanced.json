@@ -1,0 +1,916 @@
+{
+  "sectors": [
+    {
+      "id": "ai",
+      "name": "Artificial Intelligence",
+      "description": "The full AI stack from chips to applications",
+      "totalMarketSize": 2500,
+      "privateMarketPercentage": 65,
+      "averageGrowthRate": 42,
+      "color": "#1464e9",
+      "subSectors": [
+        {
+          "name": "Infrastructure/Hardware",
+          "publicCompanies": [
+            {
+              "name": "NVIDIA",
+              "ticker": "NVDA",
+              "marketCap": 1100,
+              "growthRate": 61,
+              "isPublic": true,
+              "logo": "/company-logos/nvidia.png",
+              "layer": "infrastructure"
+            },
+            {
+              "name": "AMD",
+              "ticker": "AMD",
+              "marketCap": 230,
+              "growthRate": 23,
+              "isPublic": true,
+              "logo": "/company-logos/amd.png",
+              "layer": "infrastructure"
+            }
+          ],
+          "privateCompanies": [
+            {
+              "name": "Cerebras",
+              "valuation": 4.1,
+              "growthRate": 120,
+              "isPublic": false,
+              "logo": "/company-logos/cerebras.png",
+              "layer": "infrastructure"
+            },
+            {
+              "name": "Graphcore",
+              "valuation": 2.8,
+              "growthRate": 85,
+              "isPublic": false,
+              "logo": "/company-logos/graphcore.png",
+              "layer": "infrastructure"
+            },
+            {
+              "name": "SambaNova",
+              "valuation": 5.1,
+              "growthRate": 150,
+              "isPublic": false,
+              "logo": "/company-logos/sambanova.png",
+              "layer": "infrastructure"
+            }
+          ]
+        },
+        {
+          "name": "Cloud/Compute",
+          "publicCompanies": [
+            {
+              "name": "Amazon AWS",
+              "ticker": "AMZN",
+              "marketCap": 1750,
+              "growthRate": 12,
+              "isPublic": true,
+              "logo": "/company-logos/aws.png",
+              "layer": "cloud"
+            },
+            {
+              "name": "Microsoft Azure",
+              "ticker": "MSFT",
+              "marketCap": 2800,
+              "growthRate": 18,
+              "isPublic": true,
+              "logo": "/company-logos/microsoft.png",
+              "layer": "cloud"
+            }
+          ],
+          "privateCompanies": [
+            {
+              "name": "CoreWeave",
+              "valuation": 19,
+              "growthRate": 300,
+              "isPublic": false,
+              "logo": "/company-logos/coreweave.png",
+              "layer": "cloud"
+            },
+            {
+              "name": "Lambda Labs",
+              "valuation": 1.5,
+              "growthRate": 200,
+              "isPublic": false,
+              "logo": "/company-logos/lambda.png",
+              "layer": "cloud"
+            }
+          ]
+        },
+        {
+          "name": "Foundation Models",
+          "publicCompanies": [
+            {
+              "name": "Google (Gemini)",
+              "ticker": "GOOGL",
+              "marketCap": 1750,
+              "growthRate": 15,
+              "isPublic": true,
+              "logo": "/company-logos/google.png",
+              "layer": "models"
+            },
+            {
+              "name": "Meta (Llama)",
+              "ticker": "META",
+              "marketCap": 900,
+              "growthRate": 12,
+              "isPublic": true,
+              "logo": "/company-logos/meta.png",
+              "layer": "models"
+            }
+          ],
+          "privateCompanies": [
+            {
+              "name": "OpenAI",
+              "valuation": 157,
+              "growthRate": 280,
+              "isPublic": false,
+              "logo": "/company-logos/openai.png",
+              "layer": "models",
+              "recentFunding": {
+                "amount": 6.6,
+                "date": "2024-10",
+                "series": "Series F"
+              }
+            },
+            {
+              "name": "Anthropic",
+              "valuation": 18.4,
+              "growthRate": 400,
+              "isPublic": false,
+              "logo": "/company-logos/anthropic.png",
+              "layer": "models"
+            },
+            {
+              "name": "Cohere",
+              "valuation": 5.5,
+              "growthRate": 250,
+              "isPublic": false,
+              "logo": "/company-logos/cohere.png",
+              "layer": "models"
+            },
+            {
+              "name": "Mistral AI",
+              "valuation": 6.2,
+              "growthRate": 500,
+              "isPublic": false,
+              "logo": "/company-logos/mistral.png",
+              "layer": "models"
+            }
+          ]
+        },
+        {
+          "name": "Applications",
+          "publicCompanies": [
+            {
+              "name": "Adobe (Firefly)",
+              "ticker": "ADBE",
+              "marketCap": 230,
+              "growthRate": 10,
+              "isPublic": true,
+              "logo": "/company-logos/adobe.png",
+              "layer": "applications"
+            },
+            {
+              "name": "Salesforce",
+              "ticker": "CRM",
+              "marketCap": 280,
+              "growthRate": 8,
+              "isPublic": true,
+              "logo": "/company-logos/salesforce.png",
+              "layer": "applications"
+            }
+          ],
+          "privateCompanies": [
+            {
+              "name": "Midjourney",
+              "valuation": 10,
+              "growthRate": 400,
+              "isPublic": false,
+              "logo": "/company-logos/midjourney.png",
+              "layer": "applications"
+            },
+            {
+              "name": "Character.AI",
+              "valuation": 5,
+              "growthRate": 350,
+              "isPublic": false,
+              "logo": "/company-logos/character-ai.png",
+              "layer": "applications"
+            },
+            {
+              "name": "Jasper",
+              "valuation": 1.5,
+              "growthRate": 150,
+              "isPublic": false,
+              "logo": "/company-logos/jasper.png",
+              "layer": "applications"
+            },
+            {
+              "name": "Runway",
+              "valuation": 1.5,
+              "growthRate": 200,
+              "isPublic": false,
+              "logo": "/company-logos/runway.png",
+              "layer": "applications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quantum",
+      "name": "Quantum Computing",
+      "description": "The race to quantum supremacy",
+      "totalMarketSize": 65,
+      "privateMarketPercentage": 72,
+      "averageGrowthRate": 35,
+      "color": "#7C3AED",
+      "publicCompanies": [
+        {
+          "name": "IBM Quantum",
+          "ticker": "IBM",
+          "marketCap": 170,
+          "growthRate": 5,
+          "isPublic": true,
+          "logo": "/company-logos/ibm.png"
+        },
+        {
+          "name": "IonQ",
+          "ticker": "IONQ",
+          "marketCap": 2.1,
+          "growthRate": 89,
+          "isPublic": true,
+          "logo": "/company-logos/ionq.png"
+        },
+        {
+          "name": "Rigetti",
+          "ticker": "RGTI",
+          "marketCap": 0.2,
+          "growthRate": -15,
+          "isPublic": true,
+          "logo": "/company-logos/rigetti.png"
+        },
+        {
+          "name": "D-Wave",
+          "ticker": "QBTS",
+          "marketCap": 0.3,
+          "growthRate": 22,
+          "isPublic": true,
+          "logo": "/company-logos/dwave.png"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "PsiQuantum",
+          "valuation": 3.2,
+          "growthRate": 150,
+          "isPublic": false,
+          "logo": "/company-logos/psiquantum.png"
+        },
+        {
+          "name": "Atom Computing",
+          "valuation": 1.1,
+          "growthRate": 200,
+          "isPublic": false,
+          "logo": "/company-logos/atom-computing.png"
+        },
+        {
+          "name": "QuEra Computing",
+          "valuation": 0.8,
+          "growthRate": 180,
+          "isPublic": false,
+          "logo": "/company-logos/quera.png"
+        },
+        {
+          "name": "Oxford Quantum Circuits",
+          "valuation": 0.5,
+          "growthRate": 120,
+          "isPublic": false,
+          "logo": "/company-logos/oxford-quantum.png"
+        },
+        {
+          "name": "Alice & Bob",
+          "valuation": 0.3,
+          "growthRate": 250,
+          "isPublic": false,
+          "logo": "/company-logos/alice-bob.png"
+        }
+      ]
+    },
+    {
+      "id": "blockchain",
+      "name": "Blockchain & Web3",
+      "description": "Digital assets and decentralized infrastructure",
+      "totalMarketSize": 420,
+      "privateMarketPercentage": 68,
+      "averageGrowthRate": 45,
+      "color": "#00FF94",
+      "publicCompanies": [
+        {
+          "name": "Coinbase",
+          "ticker": "COIN",
+          "marketCap": 42,
+          "growthRate": 35,
+          "isPublic": true,
+          "logo": "/company-logos/coinbase.png"
+        },
+        {
+          "name": "Block",
+          "ticker": "SQ",
+          "marketCap": 42,
+          "growthRate": 12,
+          "isPublic": true,
+          "logo": "/company-logos/block.png"
+        },
+        {
+          "name": "MicroStrategy",
+          "ticker": "MSTR",
+          "marketCap": 6.5,
+          "growthRate": 45,
+          "isPublic": true,
+          "logo": "/company-logos/microstrategy.png"
+        },
+        {
+          "name": "Marathon Digital",
+          "ticker": "MARA",
+          "marketCap": 5.2,
+          "growthRate": 67,
+          "isPublic": true,
+          "logo": "/company-logos/marathon.png"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Ripple",
+          "valuation": 15,
+          "growthRate": 85,
+          "isPublic": false,
+          "logo": "/company-logos/ripple.png"
+        },
+        {
+          "name": "Kraken",
+          "valuation": 10.8,
+          "growthRate": 120,
+          "isPublic": false,
+          "logo": "/company-logos/kraken.png"
+        },
+        {
+          "name": "Chainalysis",
+          "valuation": 8.6,
+          "growthRate": 150,
+          "isPublic": false,
+          "logo": "/company-logos/chainalysis.png"
+        },
+        {
+          "name": "Fireblocks",
+          "valuation": 8,
+          "growthRate": 200,
+          "isPublic": false,
+          "logo": "/company-logos/fireblocks.png"
+        },
+        {
+          "name": "ConsenSys",
+          "valuation": 7,
+          "growthRate": 90,
+          "isPublic": false,
+          "logo": "/company-logos/consensys.png"
+        },
+        {
+          "name": "Alchemy",
+          "valuation": 10.2,
+          "growthRate": 180,
+          "isPublic": false,
+          "logo": "/company-logos/alchemy.png"
+        },
+        {
+          "name": "OpenSea",
+          "valuation": 13.3,
+          "growthRate": -50,
+          "isPublic": false,
+          "logo": "/company-logos/opensea.png"
+        }
+      ]
+    },
+    {
+      "id": "autonomous",
+      "name": "Autonomous Vehicles",
+      "description": "Self-driving cars and robotaxis",
+      "totalMarketSize": 380,
+      "privateMarketPercentage": 74,
+      "averageGrowthRate": 38,
+      "color": "#FFD700",
+      "publicCompanies": [
+        {
+          "name": "Tesla",
+          "ticker": "TSLA",
+          "marketCap": 800,
+          "growthRate": 25,
+          "isPublic": true,
+          "logo": "/company-logos/tesla.png"
+        },
+        {
+          "name": "Mobileye",
+          "ticker": "MBLY",
+          "marketCap": 28,
+          "growthRate": 18,
+          "isPublic": true,
+          "logo": "/company-logos/mobileye.png"
+        },
+        {
+          "name": "Luminar",
+          "ticker": "LAZR",
+          "marketCap": 1.2,
+          "growthRate": -30,
+          "isPublic": true,
+          "logo": "/company-logos/luminar.png"
+        },
+        {
+          "name": "Innoviz",
+          "ticker": "INVZ",
+          "marketCap": 0.3,
+          "growthRate": -25,
+          "isPublic": true,
+          "logo": "/company-logos/innoviz.png"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Waymo",
+          "valuation": 105,
+          "growthRate": 60,
+          "isPublic": false,
+          "logo": "/company-logos/waymo.png",
+          "parentCompany": "Alphabet"
+        },
+        {
+          "name": "Cruise",
+          "valuation": 30,
+          "growthRate": 45,
+          "isPublic": false,
+          "logo": "/company-logos/cruise.png",
+          "parentCompany": "GM (majority)"
+        },
+        {
+          "name": "Aurora",
+          "valuation": 3.1,
+          "growthRate": 55,
+          "isPublic": false,
+          "logo": "/company-logos/aurora.png"
+        },
+        {
+          "name": "Nuro",
+          "valuation": 8.6,
+          "growthRate": 70,
+          "isPublic": false,
+          "logo": "/company-logos/nuro.png"
+        },
+        {
+          "name": "Pony.ai",
+          "valuation": 8.5,
+          "growthRate": 85,
+          "isPublic": false,
+          "logo": "/company-logos/pony-ai.png"
+        },
+        {
+          "name": "Zoox",
+          "valuation": 3.2,
+          "growthRate": 65,
+          "isPublic": false,
+          "logo": "/company-logos/zoox.png",
+          "parentCompany": "Amazon"
+        },
+        {
+          "name": "WeRide",
+          "valuation": 4.4,
+          "growthRate": 90,
+          "isPublic": false,
+          "logo": "/company-logos/weride.png"
+        }
+      ]
+    },
+    {
+      "id": "space-tech",
+      "name": "Space Technology",
+      "description": "Commercial space exploration and satellite technology",
+      "totalMarketSize": 550,
+      "privateMarketPercentage": 78,
+      "averageGrowthRate": 28,
+      "color": "#FF3366",
+      "publicCompanies": [
+        {
+          "name": "Lockheed Martin",
+          "ticker": "LMT",
+          "marketCap": 115,
+          "growthRate": 4,
+          "isPublic": true,
+          "logo": "/company-logos/lockheed.png"
+        },
+        {
+          "name": "Boeing",
+          "ticker": "BA",
+          "marketCap": 125,
+          "growthRate": 2,
+          "isPublic": true,
+          "logo": "/company-logos/boeing.png"
+        },
+        {
+          "name": "Northrop Grumman",
+          "ticker": "NOC",
+          "marketCap": 72,
+          "growthRate": 3,
+          "isPublic": true,
+          "logo": "/company-logos/northrop.png"
+        },
+        {
+          "name": "Rocket Lab",
+          "ticker": "RKLB",
+          "marketCap": 2.8,
+          "growthRate": 45,
+          "isPublic": true,
+          "logo": "/company-logos/rocket-lab.png"
+        },
+        {
+          "name": "Planet Labs",
+          "ticker": "PL",
+          "marketCap": 0.8,
+          "growthRate": 32,
+          "isPublic": true,
+          "logo": "/company-logos/planet-labs.png"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "SpaceX",
+          "valuation": 180,
+          "growthRate": 45,
+          "isPublic": false,
+          "logo": "/company-logos/spacex.png"
+        },
+        {
+          "name": "Blue Origin",
+          "valuation": 12,
+          "growthRate": 30,
+          "isPublic": false,
+          "logo": "/company-logos/blue-origin.png"
+        },
+        {
+          "name": "Relativity Space",
+          "valuation": 4.2,
+          "growthRate": 60,
+          "isPublic": false,
+          "logo": "/company-logos/relativity.png"
+        },
+        {
+          "name": "Firefly Aerospace",
+          "valuation": 1.5,
+          "growthRate": 80,
+          "isPublic": false,
+          "logo": "/company-logos/firefly.png"
+        },
+        {
+          "name": "Sierra Space",
+          "valuation": 5,
+          "growthRate": 75,
+          "isPublic": false,
+          "logo": "/company-logos/sierra-space.png"
+        }
+      ]
+    },
+    {
+      "id": "fintech",
+      "name": "Financial Technology",
+      "description": "Digital payments, banking, and financial services",
+      "totalMarketSize": 1800,
+      "privateMarketPercentage": 55,
+      "averageGrowthRate": 25,
+      "color": "#3B5BA9",
+      "subSectors": [
+        {
+          "name": "Infrastructure/APIs",
+          "publicCompanies": [
+            {
+              "name": "Visa",
+              "ticker": "V",
+              "marketCap": 480,
+              "growthRate": 10,
+              "isPublic": true,
+              "logo": "/company-logos/visa.png",
+              "layer": "infrastructure"
+            },
+            {
+              "name": "Mastercard",
+              "ticker": "MA",
+              "marketCap": 360,
+              "growthRate": 11,
+              "isPublic": true,
+              "logo": "/company-logos/mastercard.png",
+              "layer": "infrastructure"
+            },
+            {
+              "name": "Marqeta",
+              "ticker": "MQ",
+              "marketCap": 4.2,
+              "growthRate": 25,
+              "isPublic": true,
+              "logo": "/company-logos/marqeta.png",
+              "layer": "infrastructure"
+            }
+          ],
+          "privateCompanies": [
+            {
+              "name": "Stripe",
+              "valuation": 65,
+              "growthRate": 35,
+              "isPublic": false,
+              "logo": "/company-logos/stripe.png",
+              "layer": "infrastructure"
+            },
+            {
+              "name": "Plaid",
+              "valuation": 13.4,
+              "growthRate": 40,
+              "isPublic": false,
+              "logo": "/company-logos/plaid.png",
+              "layer": "infrastructure"
+            },
+            {
+              "name": "Checkout.com",
+              "valuation": 40,
+              "growthRate": 50,
+              "isPublic": false,
+              "logo": "/company-logos/checkout.png",
+              "layer": "infrastructure"
+            }
+          ]
+        },
+        {
+          "name": "Digital Banking",
+          "publicCompanies": [
+            {
+              "name": "SoFi",
+              "ticker": "SOFI",
+              "marketCap": 8.5,
+              "growthRate": 35,
+              "isPublic": true,
+              "logo": "/company-logos/sofi.png",
+              "layer": "banking"
+            },
+            {
+              "name": "PayPal",
+              "ticker": "PYPL",
+              "marketCap": 65,
+              "growthRate": 8,
+              "isPublic": true,
+              "logo": "/company-logos/paypal.png",
+              "layer": "banking"
+            }
+          ],
+          "privateCompanies": [
+            {
+              "name": "Chime",
+              "valuation": 25,
+              "growthRate": 30,
+              "isPublic": false,
+              "logo": "/company-logos/chime.png",
+              "layer": "banking"
+            },
+            {
+              "name": "Revolut",
+              "valuation": 33,
+              "growthRate": 55,
+              "isPublic": false,
+              "logo": "/company-logos/revolut.png",
+              "layer": "banking"
+            },
+            {
+              "name": "N26",
+              "valuation": 9,
+              "growthRate": 40,
+              "isPublic": false,
+              "logo": "/company-logos/n26.png",
+              "layer": "banking"
+            }
+          ]
+        },
+        {
+          "name": "B2B Finance",
+          "publicCompanies": [
+            {
+              "name": "Bill.com",
+              "ticker": "BILL",
+              "marketCap": 7.2,
+              "growthRate": 28,
+              "isPublic": true,
+              "logo": "/company-logos/bill.png",
+              "layer": "b2b"
+            },
+            {
+              "name": "Toast",
+              "ticker": "TOST",
+              "marketCap": 12,
+              "growthRate": 42,
+              "isPublic": true,
+              "logo": "/company-logos/toast.png",
+              "layer": "b2b"
+            }
+          ],
+          "privateCompanies": [
+            {
+              "name": "Ramp",
+              "valuation": 7.7,
+              "growthRate": 120,
+              "isPublic": false,
+              "logo": "/company-logos/ramp.png",
+              "layer": "b2b"
+            },
+            {
+              "name": "Brex",
+              "valuation": 12.3,
+              "growthRate": 90,
+              "isPublic": false,
+              "logo": "/company-logos/brex.png",
+              "layer": "b2b"
+            },
+            {
+              "name": "Rippling",
+              "valuation": 11.3,
+              "growthRate": 100,
+              "isPublic": false,
+              "logo": "/company-logos/rippling.png",
+              "layer": "b2b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defense-tech",
+      "name": "Defense Technology",
+      "description": "Modern defense contractors and military technology",
+      "totalMarketSize": 850,
+      "privateMarketPercentage": 42,
+      "averageGrowthRate": 22,
+      "color": "#0A0E27",
+      "publicCompanies": [
+        {
+          "name": "Raytheon",
+          "ticker": "RTX",
+          "marketCap": 145,
+          "growthRate": 5,
+          "isPublic": true,
+          "logo": "/company-logos/raytheon.png"
+        },
+        {
+          "name": "General Dynamics",
+          "ticker": "GD",
+          "marketCap": 72,
+          "growthRate": 4,
+          "isPublic": true,
+          "logo": "/company-logos/general-dynamics.png"
+        },
+        {
+          "name": "L3Harris",
+          "ticker": "LHX",
+          "marketCap": 42,
+          "growthRate": 3,
+          "isPublic": true,
+          "logo": "/company-logos/l3harris.png"
+        },
+        {
+          "name": "Palantir",
+          "ticker": "PLTR",
+          "marketCap": 38,
+          "growthRate": 28,
+          "isPublic": true,
+          "logo": "/company-logos/palantir.png"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Anduril",
+          "valuation": 8.5,
+          "growthRate": 150,
+          "isPublic": false,
+          "logo": "/company-logos/anduril.png"
+        },
+        {
+          "name": "Shield AI",
+          "valuation": 2.7,
+          "growthRate": 120,
+          "isPublic": false,
+          "logo": "/company-logos/shield-ai.png"
+        },
+        {
+          "name": "Rebellion Defense",
+          "valuation": 1.1,
+          "growthRate": 80,
+          "isPublic": false,
+          "logo": "/company-logos/rebellion.png"
+        },
+        {
+          "name": "Epirus",
+          "valuation": 1.4,
+          "growthRate": 90,
+          "isPublic": false,
+          "logo": "/company-logos/epirus.png"
+        },
+        {
+          "name": "Vannevar Labs",
+          "valuation": 0.8,
+          "growthRate": 110,
+          "isPublic": false,
+          "logo": "/company-logos/vannevar.png"
+        }
+      ]
+    },
+    {
+      "id": "robotics",
+      "name": "Robotics & Automation",
+      "description": "Industrial and consumer robotics, warehouse automation",
+      "totalMarketSize": 680,
+      "privateMarketPercentage": 62,
+      "averageGrowthRate": 32,
+      "color": "#609bfd",
+      "publicCompanies": [
+        {
+          "name": "Intuitive Surgical",
+          "ticker": "ISRG",
+          "marketCap": 135,
+          "growthRate": 15,
+          "isPublic": true,
+          "logo": "/company-logos/intuitive.png"
+        },
+        {
+          "name": "ABB",
+          "ticker": "ABB",
+          "marketCap": 68,
+          "growthRate": 7,
+          "isPublic": true,
+          "logo": "/company-logos/abb.png"
+        },
+        {
+          "name": "iRobot",
+          "ticker": "IRBT",
+          "marketCap": 0.5,
+          "growthRate": -5,
+          "isPublic": true,
+          "logo": "/company-logos/irobot.png"
+        },
+        {
+          "name": "Symbotic",
+          "ticker": "SYM",
+          "marketCap": 25,
+          "growthRate": 58,
+          "isPublic": true,
+          "logo": "/company-logos/symbotic.png"
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Boston Dynamics",
+          "valuation": 2.5,
+          "growthRate": 40,
+          "isPublic": false,
+          "logo": "/company-logos/boston-dynamics.png",
+          "parentCompany": "Hyundai"
+        },
+        {
+          "name": "Figure",
+          "valuation": 2.6,
+          "growthRate": 200,
+          "isPublic": false,
+          "logo": "/company-logos/figure.png"
+        },
+        {
+          "name": "Agility Robotics",
+          "valuation": 1,
+          "growthRate": 150,
+          "isPublic": false,
+          "logo": "/company-logos/agility.png"
+        },
+        {
+          "name": "Collaborative Robotics",
+          "valuation": 0.8,
+          "growthRate": 180,
+          "isPublic": false,
+          "logo": "/company-logos/cobot.png"
+        },
+        {
+          "name": "1X Technologies",
+          "valuation": 0.5,
+          "growthRate": 220,
+          "isPublic": false,
+          "logo": "/company-logos/1x.png"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-12-20",
+    "sources": ["PitchBook", "Crunchbase", "Company filings", "Industry reports"],
+    "notes": "Valuations and market caps in billions USD. Growth rates are YoY revenue or estimated. Some companies like Waymo operate independently but are subsidiaries."
+  }
+}

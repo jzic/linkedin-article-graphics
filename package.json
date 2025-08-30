@@ -1,0 +1,29 @@
+{
+  "name": "linkedin-graphics",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node node_modules\\next\\dist\\bin\\next dev",
+    "build": "node node_modules\\next\\dist\\bin\\next build",
+    "start": "node node_modules\\next\\dist\\bin\\next start",
+    "lint": "node node_modules\\next\\dist\\bin\\next lint",
+    "dev:npx": "npx next dev",
+    "build:npx": "npx next build",
+    "start:npx": "npx next start"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.7",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

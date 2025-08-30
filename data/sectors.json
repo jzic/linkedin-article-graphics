@@ -1,0 +1,380 @@
+{
+  "sectors": [
+    {
+      "id": "ai",
+      "name": "Artificial Intelligence",
+      "description": "Companies developing AI/ML technologies and applications",
+      "totalMarketSize": 2500,
+      "privateMarketPercentage": 65,
+      "averageGrowthRate": 42,
+      "color": "#1464e9",
+      "publicCompanies": [
+        {
+          "name": "Google (Alphabet)",
+          "ticker": "GOOGL",
+          "marketCap": 1750,
+          "growthRate": 15,
+          "isPublic": true,
+          "founded": 1998
+        },
+        {
+          "name": "Microsoft",
+          "ticker": "MSFT",
+          "marketCap": 2800,
+          "growthRate": 18,
+          "isPublic": true,
+          "founded": 1975
+        },
+        {
+          "name": "Meta",
+          "ticker": "META",
+          "marketCap": 900,
+          "growthRate": 12,
+          "isPublic": true,
+          "founded": 2004
+        },
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "marketCap": 1100,
+          "growthRate": 61,
+          "isPublic": true,
+          "founded": 1993
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "OpenAI",
+          "valuation": 157,
+          "growthRate": 280,
+          "isPublic": false,
+          "founded": 2015
+        },
+        {
+          "name": "Anthropic",
+          "valuation": 18.4,
+          "growthRate": 400,
+          "isPublic": false,
+          "founded": 2021
+        },
+        {
+          "name": "Cohere",
+          "valuation": 5.5,
+          "growthRate": 250,
+          "isPublic": false,
+          "founded": 2019
+        },
+        {
+          "name": "Inflection AI",
+          "valuation": 4,
+          "growthRate": 300,
+          "isPublic": false,
+          "founded": 2022
+        },
+        {
+          "name": "Hugging Face",
+          "valuation": 4.5,
+          "growthRate": 200,
+          "isPublic": false,
+          "founded": 2016
+        },
+        {
+          "name": "Scale AI",
+          "valuation": 13.8,
+          "growthRate": 150,
+          "isPublic": false,
+          "founded": 2016
+        }
+      ]
+    },
+    {
+      "id": "space-tech",
+      "name": "Space Technology",
+      "description": "Commercial space exploration and satellite technology",
+      "totalMarketSize": 550,
+      "privateMarketPercentage": 78,
+      "averageGrowthRate": 28,
+      "color": "#7C3AED",
+      "publicCompanies": [
+        {
+          "name": "Lockheed Martin",
+          "ticker": "LMT",
+          "marketCap": 115,
+          "growthRate": 4,
+          "isPublic": true,
+          "founded": 1995
+        },
+        {
+          "name": "Boeing",
+          "ticker": "BA",
+          "marketCap": 125,
+          "growthRate": 2,
+          "isPublic": true,
+          "founded": 1916
+        },
+        {
+          "name": "Northrop Grumman",
+          "ticker": "NOC",
+          "marketCap": 72,
+          "growthRate": 3,
+          "isPublic": true,
+          "founded": 1994
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "SpaceX",
+          "valuation": 180,
+          "growthRate": 45,
+          "isPublic": false,
+          "founded": 2002
+        },
+        {
+          "name": "Blue Origin",
+          "valuation": 12,
+          "growthRate": 30,
+          "isPublic": false,
+          "founded": 2000
+        },
+        {
+          "name": "Relativity Space",
+          "valuation": 4.2,
+          "growthRate": 60,
+          "isPublic": false,
+          "founded": 2015
+        },
+        {
+          "name": "Firefly Aerospace",
+          "valuation": 1.5,
+          "growthRate": 80,
+          "isPublic": false,
+          "founded": 2014
+        },
+        {
+          "name": "Astra",
+          "valuation": 0.5,
+          "growthRate": 40,
+          "isPublic": false,
+          "founded": 2016
+        }
+      ]
+    },
+    {
+      "id": "fintech",
+      "name": "Financial Technology",
+      "description": "Digital payments, banking, and financial services",
+      "totalMarketSize": 1800,
+      "privateMarketPercentage": 55,
+      "averageGrowthRate": 25,
+      "color": "#00FF94",
+      "publicCompanies": [
+        {
+          "name": "PayPal",
+          "ticker": "PYPL",
+          "marketCap": 65,
+          "growthRate": 8,
+          "isPublic": true,
+          "founded": 1998
+        },
+        {
+          "name": "Block (Square)",
+          "ticker": "SQ",
+          "marketCap": 42,
+          "growthRate": 12,
+          "isPublic": true,
+          "founded": 2009
+        },
+        {
+          "name": "Visa",
+          "ticker": "V",
+          "marketCap": 480,
+          "growthRate": 10,
+          "isPublic": true,
+          "founded": 1958
+        },
+        {
+          "name": "Mastercard",
+          "ticker": "MA",
+          "marketCap": 360,
+          "growthRate": 11,
+          "isPublic": true,
+          "founded": 1966
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Stripe",
+          "valuation": 65,
+          "growthRate": 35,
+          "isPublic": false,
+          "founded": 2010
+        },
+        {
+          "name": "Plaid",
+          "valuation": 13.4,
+          "growthRate": 40,
+          "isPublic": false,
+          "founded": 2013
+        },
+        {
+          "name": "Chime",
+          "valuation": 25,
+          "growthRate": 30,
+          "isPublic": false,
+          "founded": 2013
+        },
+        {
+          "name": "Rippling",
+          "valuation": 11.3,
+          "growthRate": 100,
+          "isPublic": false,
+          "founded": 2016
+        },
+        {
+          "name": "Brex",
+          "valuation": 12.3,
+          "growthRate": 50,
+          "isPublic": false,
+          "founded": 2017
+        }
+      ]
+    },
+    {
+      "id": "defense-tech",
+      "name": "Defense Technology",
+      "description": "Modern defense contractors and military technology",
+      "totalMarketSize": 850,
+      "privateMarketPercentage": 42,
+      "averageGrowthRate": 22,
+      "color": "#FF3366",
+      "publicCompanies": [
+        {
+          "name": "Raytheon",
+          "ticker": "RTX",
+          "marketCap": 145,
+          "growthRate": 5,
+          "isPublic": true,
+          "founded": 1922
+        },
+        {
+          "name": "General Dynamics",
+          "ticker": "GD",
+          "marketCap": 72,
+          "growthRate": 4,
+          "isPublic": true,
+          "founded": 1899
+        },
+        {
+          "name": "L3Harris",
+          "ticker": "LHX",
+          "marketCap": 42,
+          "growthRate": 3,
+          "isPublic": true,
+          "founded": 2019
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Anduril",
+          "valuation": 8.5,
+          "growthRate": 150,
+          "isPublic": false,
+          "founded": 2017
+        },
+        {
+          "name": "Shield AI",
+          "valuation": 2.7,
+          "growthRate": 120,
+          "isPublic": false,
+          "founded": 2015
+        },
+        {
+          "name": "Rebellion Defense",
+          "valuation": 1.1,
+          "growthRate": 80,
+          "isPublic": false,
+          "founded": 2019
+        },
+        {
+          "name": "Epirus",
+          "valuation": 1.4,
+          "growthRate": 90,
+          "isPublic": false,
+          "founded": 2018
+        }
+      ]
+    },
+    {
+      "id": "robotics",
+      "name": "Robotics & Automation",
+      "description": "Industrial and consumer robotics, autonomous systems",
+      "totalMarketSize": 680,
+      "privateMarketPercentage": 62,
+      "averageGrowthRate": 32,
+      "color": "#FFD700",
+      "publicCompanies": [
+        {
+          "name": "Intuitive Surgical",
+          "ticker": "ISRG",
+          "marketCap": 135,
+          "growthRate": 15,
+          "isPublic": true,
+          "founded": 1995
+        },
+        {
+          "name": "ABB",
+          "ticker": "ABB",
+          "marketCap": 68,
+          "growthRate": 7,
+          "isPublic": true,
+          "founded": 1988
+        },
+        {
+          "name": "iRobot",
+          "ticker": "IRBT",
+          "marketCap": 0.5,
+          "growthRate": -5,
+          "isPublic": true,
+          "founded": 1990
+        }
+      ],
+      "privateCompanies": [
+        {
+          "name": "Boston Dynamics",
+          "valuation": 2.5,
+          "growthRate": 40,
+          "isPublic": false,
+          "founded": 1992
+        },
+        {
+          "name": "Cruise",
+          "valuation": 30,
+          "growthRate": 50,
+          "isPublic": false,
+          "founded": 2013
+        },
+        {
+          "name": "Waymo",
+          "valuation": 105,
+          "growthRate": 60,
+          "isPublic": false,
+          "founded": 2009
+        },
+        {
+          "name": "Aurora",
+          "valuation": 3.1,
+          "growthRate": 45,
+          "isPublic": false,
+          "founded": 2017
+        },
+        {
+          "name": "Nuro",
+          "valuation": 8.6,
+          "growthRate": 70,
+          "isPublic": false,
+          "founded": 2016
+        }
+      ]
+    }
+  ]
+}
