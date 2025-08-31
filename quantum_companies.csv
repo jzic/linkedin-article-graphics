@@ -12,17 +12,14 @@ Rigetti,Public,RGTI,4.88,Quantum cloud services
 Quantum Computing Inc,Public,QUBT,2.32,Quantum software
 Arqit Quantum,Public,ARQQ,0.385,Quantum encryption
 PsiQuantum,Private,,6,Photonic quantum computing
-Atom Computing,Private,,1.2,Neutral atom quantum
+Atom Computing,Private,,0.29,Neutral atom quantum
 Xanadu,Private,,1,Photonic quantum
 QuEra,Private,,1,Neutral atom arrays
-Infleqtion,Private,,0.8,Cold atom quantum
-Oxford Quantum Circuits,Private,,0.65,Superconducting quantum
-Quantum Machines,Private,,0.5,Quantum control systems
-SandboxAQ,Private,,0.5,Quantum + AI applications
-Pasqal,Private,,0.45,Neutral atom quantum
-Alice & Bob,Private,,0.35,Error-corrected qubits
-Universal Quantum,Private,,0.3,Trapped ion quantum
-Quantum Motion,Private,,0.25,Silicon quantum
-Q-CTRL,Private,,0.2,Quantum control software
-Classiq,Private,,0.15,Quantum software platform
-Nord Quantique,Private,,0.024,Bosonic quantum computing
+Infleqtion,Private,,0.707,Cold atom quantum
+Oxford Quantum Circuits,Private,,0.5,Superconducting quantum
+Quantum Machines,Private,,0.7,Quantum control systems
+SandboxAQ,Private,,5.75,Quantum + AI applications
+Pasqal,Private,,0.594,Neutral atom quantum
+Quantum Motion,Private,,0.02,Silicon quantum
+Q-CTRL,Private,,0.253,Quantum control software
+Classiq,Private,,0.156,Quantum software platform

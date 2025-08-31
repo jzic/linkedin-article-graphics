@@ -15,21 +15,20 @@ SentinelOne,Public,S,5.7,AI-powered endpoint security
 Qualys,Public,QLYS,4.8,Cloud security compliance
 Tenable,Public,TENB,3.6,Vulnerability management
 Rapid7,Public,RPD,1.3,Security analytics
-Tanium,Private,,9,Endpoint security (profitable)
-Snyk,Private,,8.5,Developer security
-Netskope,Private,,7.5,SASE platform (IPO filed Aug 2025)
-1Password,Private,,6.8,Password management
-OneTrust,Private,,5.3,Privacy/compliance platform
+Tanium,Private,,6,Endpoint security (profitable)
+Snyk,Private,,4,Developer security
+Netskope,Private,,5,SASE platform (IPO filed Aug 2025)
+1Password,Private,,7.4,Password management
+OneTrust,Private,,5,Privacy/compliance platform
 Abnormal Security,Private,,5.1,Email security
 Cato Networks,Private,,4.8,SASE platform
-Arctic Wolf,Private,,4.3,MDR/SOC services
-Cohesity,Private,,3.7,Data security (merged w/ Veritas)
-Illumio,Private,,2.7,Zero trust segmentation
-Transmit Security,Private,,2.2,Identity management
-SonicWall,Private,,2.1,Network security
-Druva,Private,,2,Cloud data protection
-Orca Security,Private,,1.8,Cloud security
-Signifyd,Private,,1.34,E-commerce fraud protection
-BioCatch,Private,,1.3,Behavioral biometrics
-Island,Private,,1.3,Enterprise browser
-Vectra AI,Private,,1.2,AI threat detection
+Arctic Wolf,Private,,4.5,MDR/SOC services
+Cohesity,Private,,9,Data security (merged w/ Veritas)
+Illumio,Private,,1.5,Zero trust segmentation
+Transmit Security,Private,,1.1,Identity management
+SonicWall,Private,,1.05,Network security
+Druva,Private,,1,Cloud data protection
+Orca Security,Private,,0.9,Cloud security
+Signifyd,Private,,500,E-commerce fraud protection
+Island,Private,,4.8,Enterprise browser
+Vectra AI,Private,,500,AI threat detection

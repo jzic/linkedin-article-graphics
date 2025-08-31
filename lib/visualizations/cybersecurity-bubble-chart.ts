@@ -60,7 +60,6 @@ export class CybersecurityBubbleChartVisualization {
     'Illumio': '#FF6B35',             // Illumio orange
     'SonicWall': '#FF6200',           // SonicWall orange
     'Druva': '#F7931E',               // Druva orange
-    'BioCatch': '#00ACC1',            // BioCatch cyan
     'Signifyd': '#FE5000',            // Signifyd orange
     'Island': '#0D47A1',              // Island blue
     'Vectra AI': '#1E88E5',           // Vectra blue
@@ -91,22 +90,22 @@ export class CybersecurityBubbleChartVisualization {
     // Define companies with their data - August 2025 market caps/valuations
     const publicCompanies: CybersecurityCompany[] = [
       // Largest cybersecurity companies by market cap
-      { name: 'Broadcom', value: 1451, ticker: 'AVGO', logo: 'broadcom.png' },  // Includes Symantec
-      { name: 'Cisco', value: 271, ticker: 'CSCO', logo: 'cisco.png' },  // Major security portfolio
-      { name: 'Palo Alto Networks', value: 122, ticker: 'PANW', logo: 'palo-alto.png' },  // Largest pure-play
-      { name: 'CrowdStrike', value: 94, ticker: 'CRWD', logo: 'crowdstrike.png' },
-      { name: 'Fortinet', value: 72, ticker: 'FTNT', logo: 'fortinet.png' },
-      { name: 'Cloudflare', value: 68, ticker: 'NET', logo: 'cloudflare.png' },
+      { name: 'Broadcom', value: 1360, ticker: 'AVGO', logo: 'broadcom.png' },  // Includes Symantec
+      { name: 'Cisco', value: 269, ticker: 'CSCO', logo: 'cisco.png' },  // Major security portfolio
+      { name: 'Palo Alto Networks', value: 124, ticker: 'PANW', logo: 'palo-alto.png' },  // Largest pure-play
+      { name: 'CrowdStrike', value: 100, ticker: 'CRWD', logo: 'crowdstrike.png' },
+      { name: 'Fortinet', value: 59.4, ticker: 'FTNT', logo: 'fortinet.png' },
+      { name: 'Cloudflare', value: 70, ticker: 'NET', logo: 'cloudflare.png' },
       { name: 'Datadog', value: 45, ticker: 'DDOG', logo: 'datadog.png' },  // Observability + security
-      { name: 'Zscaler', value: 31, ticker: 'ZS', logo: 'zscaler.png' },
+      { name: 'Zscaler', value: 42, ticker: 'ZS', logo: 'zscaler.png' },
       { name: 'CyberArk', value: 22, ticker: 'CYBR', logo: 'cyberark.png' },
       { name: 'Check Point', value: 20, ticker: 'CHKP', logo: 'check-point.png' },
       { name: 'Gen Digital', value: 18, ticker: 'GEN', logo: 'gen-digital.png' },  // Norton/Avast
       { name: 'Okta', value: 16, ticker: 'OKTA', logo: 'okta.png' },
-      { name: 'SentinelOne', value: 5.6, ticker: 'S', logo: 'sentinelone.png' },
+      { name: 'SentinelOne', value: 5.7, ticker: 'S', logo: 'sentinelone.png' },
       { name: 'Qualys', value: 4.8, ticker: 'QLYS', logo: 'qualys.png' },
       { name: 'Tenable', value: 3.6, ticker: 'TENB', logo: 'tenable.png' },
-      { name: 'Rapid7', value: 1.6, ticker: 'RPD', logo: 'rapid7.png' },
+      { name: 'Rapid7', value: 1.3, ticker: 'RPD', logo: 'rapid7.png' },
     ]
 
     const privateCompanies: CybersecurityCompany[] = [
@@ -114,24 +113,23 @@ export class CybersecurityBubbleChartVisualization {
       // Wiz removed - acquired by Google for $32B in March 2025
       // KnowBe4 removed - acquired by Vista Equity Partners in 2023
       // Lacework removed - acquired by Fortinet in August 2024
-      { name: 'Tanium', value: 9, logo: 'tanium.png' },  // Endpoint security, profitable
-      { name: 'Snyk', value: 8.5, logo: 'snyk.png' },  // Developer security
-      { name: 'Netskope', value: 7.5, logo: 'netskope.png' },  // Filed for IPO Aug 2025
-      { name: '1Password', value: 6.8, logo: '1password.png' },  // Password management, IPO planned
-      { name: 'OneTrust', value: 5.3, logo: 'onetrust.png' },  // Privacy/compliance
+      { name: 'Cohesity', value: 9, logo: 'cohesity.png' },  // Data security, merged w/ Veritas
+      { name: '1Password', value: 7.4, logo: '1password.png' },  // Password management
+      { name: 'Tanium', value: 6, logo: 'tanium.png' },  // Endpoint security, profitable
       { name: 'Abnormal Security', value: 5.1, logo: 'abnormal_security.png' },  // Email security - NOTE: underscore in filename
-      { name: 'Arctic Wolf', value: 4.3, logo: 'arctic-wolf.png' },  // MDR/SOC
-      { name: 'Cohesity', value: 3.7, logo: 'cohesity.png' },  // Data security, merged w/ Veritas
-      { name: 'Illumio', value: 2.7, logo: 'illumio.png' },  // Zero trust segmentation
-      { name: 'SonicWall', value: 2.1, logo: 'sonicwall.png' },  // Network security
-      { name: 'Druva', value: 2, logo: 'druva.png' },  // Cloud data protection
-      { name: 'BioCatch', value: 1.3, logo: 'biocatch.png' },  // Behavioral biometrics
-      { name: 'Signifyd', value: 1.34, logo: 'signifyd.png' },  // E-commerce fraud protection
-      { name: 'Island', value: 1.3, logo: 'island.png' },  // Enterprise browser
-      { name: 'Vectra AI', value: 1.2, logo: 'vectra-ai.png' },  // AI threat detection
+      { name: 'OneTrust', value: 5, logo: 'onetrust.png' },  // Privacy/compliance
+      { name: 'Netskope', value: 5, logo: 'netskope.png' },  // SASE platform, IPO filed Aug 2025
+      { name: 'Island', value: 4.8, logo: 'island.png' },  // Enterprise browser
       { name: 'Cato Networks', value: 4.8, logo: 'cato-networks.png' },  // SASE platform
-      { name: 'Orca Security', value: 1.8, logo: 'orca-security.png' },  // Cloud security
-      { name: 'Transmit Security', value: 2.2, logo: 'transmit-security.png' },  // Identity management
+      { name: 'Arctic Wolf', value: 4.5, logo: 'arctic-wolf.png' },  // MDR/SOC services
+      { name: 'Snyk', value: 4, logo: 'snyk.png' },  // Developer security
+      { name: 'Illumio', value: 1.5, logo: 'illumio.png' },  // Zero trust segmentation
+      { name: 'Transmit Security', value: 1.1, logo: 'transmit-security.png' },  // Identity management
+      { name: 'SonicWall', value: 1.05, logo: 'sonicwall.png' },  // Network security
+      { name: 'Druva', value: 1, logo: 'druva.png' },  // Cloud data protection
+      { name: 'Orca Security', value: 0.9, logo: 'orca-security.png' },  // Cloud security
+      { name: 'Vectra AI', value: 0.5, logo: 'vectra-ai.png' },  // AI threat detection
+      { name: 'Signifyd', value: 0.5, logo: 'signifyd.png' },  // E-commerce fraud protection
     ]
     
     // Assign brand colors

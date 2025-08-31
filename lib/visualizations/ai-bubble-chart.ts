@@ -691,7 +691,7 @@ export class AIBubbleChartVisualization {
     const privateTotal = this.privateBubbles.reduce((sum, b) => sum + b.company.value, 0)
     
     // PUBLIC SIDE - Exactly matching AI Simple Logos format
-    const pureAIEstimate = publicTotal * 0.4
+    const pureAIEstimate = 8260
     const publicLine1 = `Total Market Cap: $${(publicTotal/1000).toFixed(2)}T | Pure AI Value: $${(pureAIEstimate/1000).toFixed(1)}T`
     
     this.renderer.drawText(publicLine1, padding + sectionWidth/2, totalsY, {

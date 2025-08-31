@@ -47,14 +47,11 @@ export class QuantumBubbleChartVisualization {
     // Private companies - Quantum innovators
     'PsiQuantum': '#1C1C1C',        // PsiQuantum dark gray
     'Atom Computing': '#FF6600',     // Atom orange
-    'Alice & Bob': '#FFD700',       // Alice & Bob yellow
     'Oxford Quantum Circuits': '#002147', // OQC oxford blue
     'Quantum Machines': '#0066FF',  // QM blue
     'Pasqal': '#00C887',            // Pasqal green
-    'Nord Quantique': '#DC2626',    // Nord red
     'Xanadu': '#4054C7',            // Xanadu blue
     'QuEra': '#4B2CBD',             // QuEra purple
-    'Universal Quantum': '#FF1493',  // Universal pink
     'Quantum Motion': '#FF4342',    // Quantum Motion red
     'SandboxAQ': '#FFC107',         // Sandbox yellow/gold
     'Q-CTRL': '#7B3FF2',            // Q-CTRL purple
@@ -83,40 +80,37 @@ export class QuantumBubbleChartVisualization {
     
     // Define companies with their data - August 2025 market caps/valuations
     const publicCompanies: QuantumCompany[] = [
-      // Tech giants with quantum divisions (using fraction of market cap)
-      { name: 'IBM', value: 180, ticker: 'IBM', logo: 'ibm.png' },  // Full market cap, significant quantum
-      { name: 'Google', value: 2500, ticker: 'GOOGL', logo: 'google.png' },  // Alphabet market cap
-      { name: 'Microsoft', value: 3900, ticker: 'MSFT', logo: 'microsoft.png' },  // Microsoft market cap
-      { name: 'Amazon', value: 2500, ticker: 'AMZN', logo: 'amazon.png' },  // Amazon market cap
-      { name: 'Intel', value: 140, ticker: 'INTC', logo: 'intel.png' },  // Intel market cap
-      { name: 'Honeywell', value: 147, ticker: 'HON', logo: 'honeywell.png' },  // Honeywell market cap
-      { name: 'Nvidia', value: 4400, ticker: 'NVDA', logo: 'nvidia.png' },  // Nvidia market cap
+      // Tech giants with quantum divisions
+      { name: 'Nvidia', value: 4280, ticker: 'NVDA', logo: 'nvidia.png' },  // GPU computing for quantum simulation
+      { name: 'Microsoft', value: 3410, ticker: 'MSFT', logo: 'microsoft.png' },  // Azure Quantum cloud platform
+      { name: 'Google', value: 1850, ticker: 'GOOGL', logo: 'google.png' },  // Quantum AI and Sycamore processor
+      { name: 'Amazon', value: 1050, ticker: 'AMZN', logo: 'amazon.png' },  // AWS Braket quantum cloud
+      { name: 'IBM', value: 226, ticker: 'IBM', logo: 'ibm.png' },  // Quantum Network and processors
+      { name: 'Honeywell', value: 139, ticker: 'HON', logo: 'honeywell.png' },  // Quantum solutions division
+      { name: 'Intel', value: 106, ticker: 'INTC', logo: 'intel.png' },  // Quantum computing research
       
       // Pure-play quantum companies
-      { name: 'IonQ', value: 6.4, ticker: 'IONQ', logo: 'ionq.png' },
-      { name: 'Rigetti', value: 3.5, ticker: 'RGTI', logo: 'rigetti.png' },
-      { name: 'D-Wave', value: 4.5, ticker: 'QBTS', logo: 'd-wave.png' },
-      { name: 'Quantum Computing Inc', value: 0.8, ticker: 'QUBT', logo: 'quantum-computing-inc.png' },
-      { name: 'Arqit Quantum', value: 0.15, ticker: 'ARQQ', logo: 'arqit.png' },
+      { name: 'IonQ', value: 12, ticker: 'IONQ', logo: 'ionq.png' },
+      { name: 'D-Wave', value: 5.11, ticker: 'QBTS', logo: 'd-wave.png' },
+      { name: 'Rigetti', value: 4.88, ticker: 'RGTI', logo: 'rigetti.png' },
+      { name: 'Quantum Computing Inc', value: 2.32, ticker: 'QUBT', logo: 'quantum-computing-inc.png' },
+      { name: 'Arqit Quantum', value: 0.385, ticker: 'ARQQ', logo: 'arqit.png' },
     ]
 
     const privateCompanies: QuantumCompany[] = [
       // Note: Quantinuum removed - majority owned by Honeywell (52-54%)
-      { name: 'PsiQuantum', value: 6, logo: 'psiquantum.png' },  // $6B valuation, independent
-      { name: 'Atom Computing', value: 1.2, logo: 'atom-computing.png' },
-      { name: 'Alice & Bob', value: 0.35, logo: 'alice-bob.png' },  // €300-400M
-      { name: 'Oxford Quantum Circuits', value: 0.65, logo: 'oxford-quantum-circuits.png' },
-      { name: 'Quantum Machines', value: 0.5, logo: 'quantum-machines.png' },
-      { name: 'Pasqal', value: 0.45, logo: 'pasqal.png' },
-      { name: 'Nord Quantique', value: 0.024, logo: 'nord-quantique.png' },
-      { name: 'Xanadu', value: 1, logo: 'xanadu.png' },
-      { name: 'QuEra', value: 1, logo: 'quera.png' },
-      { name: 'Universal Quantum', value: 0.3, logo: 'universal-quantum.png' },
-      { name: 'Quantum Motion', value: 0.25, logo: 'quantum-motion.png' },
-      { name: 'SandboxAQ', value: 0.5, logo: 'sandboxaq.png' },
-      { name: 'Q-CTRL', value: 0.2, logo: 'q-ctrl.png' },
-      { name: 'Classiq', value: 0.15, logo: 'classiq.png' },
-      { name: 'Infleqtion', value: 0.8, logo: 'infleqtion.png' },  // Independent, $311M raised
+      { name: 'PsiQuantum', value: 6, logo: 'psiquantum.png' },  // Photonic quantum computing
+      { name: 'SandboxAQ', value: 5.75, logo: 'sandboxaq.png' },  // Quantum + AI applications
+      { name: 'Xanadu', value: 1, logo: 'xanadu.png' },  // Photonic quantum
+      { name: 'QuEra', value: 1, logo: 'quera.png' },  // Neutral atom arrays
+      { name: 'Infleqtion', value: 0.707, logo: 'infleqtion.png' },  // Cold atom quantum
+      { name: 'Quantum Machines', value: 0.7, logo: 'quantum-machines.png' },  // Quantum control systems
+      { name: 'Pasqal', value: 0.594, logo: 'pasqal.png' },  // Neutral atom quantum
+      { name: 'Oxford Quantum Circuits', value: 0.5, logo: 'oxford-quantum-circuits.png' },  // Superconducting quantum
+      { name: 'Atom Computing', value: 0.29, logo: 'atom-computing.png' },  // Neutral atom quantum
+      { name: 'Q-CTRL', value: 0.253, logo: 'q-ctrl.png' },  // Quantum control software
+      { name: 'Classiq', value: 0.156, logo: 'classiq.png' },  // Quantum software platform
+      { name: 'Quantum Motion', value: 0.02, logo: 'quantum-motion.png' },  // Silicon quantum
     ]
     
     // Assign brand colors
