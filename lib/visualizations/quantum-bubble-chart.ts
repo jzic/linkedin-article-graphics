@@ -673,13 +673,11 @@ export class QuantumBubbleChartVisualization {
     const publicTotal = this.publicBubbles.reduce((sum, b) => sum + b.company.value, 0)
     const privateTotal = this.privateBubbles.reduce((sum, b) => sum + b.company.value, 0)
     
-    // Calculate pure-play quantum totals (excluding tech giants)
-    const purePlayPublic = this.publicBubbles
-      .filter(b => ['IonQ', 'Rigetti', 'D-Wave', 'Quantum Computing Inc', 'Arqit Quantum'].includes(b.company.name))
-      .reduce((sum, b) => sum + b.company.value, 0)
+    // Pure quantum exposure (from market_cap_attribution_by_sector.md)
+    const pureQuantumEstimate = 39.3356 // Pre-calculated pure quantum value from attribution analysis
     
-    // PUBLIC COMPANIES - Show both total and pure-play
-    const publicLine1 = `Total Market Cap: $${(publicTotal/1000).toFixed(1)}T | Pure Quantum: $${purePlayPublic.toFixed(1)}B`
+    // PUBLIC COMPANIES - Show both total and pure quantum value
+    const publicLine1 = `Total Market Cap: $${(publicTotal/1000).toFixed(1)}T | Pure Quantum Value: $${pureQuantumEstimate.toFixed(1)}B`
     
     this.renderer.drawText(publicLine1, padding + sectionWidth/2, totalsY, {
       fontSize: 36,  // SAME AS AI BUBBLE
@@ -688,9 +686,9 @@ export class QuantumBubbleChartVisualization {
       align: 'center',
     })
     
-    // Line 2: 2030 Projected for pure-play quantum
-    const projectedPurePlay = purePlayPublic * Math.pow(2.5, 5)  // 150% annual growth for quantum
-    this.renderer.drawText(`2030 Pure Quantum Projected: $${projectedPurePlay.toFixed(0)}B`, padding + sectionWidth/2, totalsY + 35, {
+    // Line 2: 2030 Projected for pure quantum value
+    const projectedQuantum = pureQuantumEstimate * Math.pow(2.5, 5)  // 150% annual growth for quantum
+    this.renderer.drawText(`2030 Quantum Projected: $${projectedQuantum.toFixed(0)}B`, padding + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
       color: brandConfig.colors.neutral[600],  // SAME AS AI BUBBLE

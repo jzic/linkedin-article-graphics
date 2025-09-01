@@ -692,13 +692,11 @@ export class CybersecurityBubbleChartVisualization {
     const publicTotal = this.publicBubbles.reduce((sum, b) => sum + b.company.value, 0)
     const privateTotal = this.privateBubbles.reduce((sum, b) => sum + b.company.value, 0)
     
-    // Calculate pure-play cybersecurity totals (excluding Broadcom/Cisco)
-    const purePlayPublic = this.publicBubbles
-      .filter(b => !['Broadcom', 'Cisco'].includes(b.company.name))
-      .reduce((sum, b) => sum + b.company.value, 0)
+    // Pure cybersecurity exposure (from market_cap_attribution_by_sector.md)
+    const pureCybersecurityEstimate = 551.442 // Pre-calculated pure cybersecurity value from attribution analysis
     
-    // PUBLIC COMPANIES - Show both total and pure-play
-    const publicLine1 = `Total Market Cap: $${(publicTotal/1000).toFixed(1)}T | Pure Security: $${purePlayPublic.toFixed(0)}B`
+    // PUBLIC COMPANIES - Show both total and pure cybersecurity value
+    const publicLine1 = `Total Market Cap: $${(publicTotal/1000).toFixed(1)}T | Pure Cybersecurity Value: $${pureCybersecurityEstimate.toFixed(1)}B`
     
     this.renderer.drawText(publicLine1, padding + sectionWidth/2, totalsY, {
       fontSize: 36,  // SAME AS AI BUBBLE
@@ -708,8 +706,11 @@ export class CybersecurityBubbleChartVisualization {
     })
     
     // Line 2: 2030 Projected for cybersecurity market
-    const projectedPurePlay = purePlayPublic * Math.pow(1.15, 5)  // 15% CAGR for cybersecurity
-    this.renderer.drawText(`2030 Security Projected: $${projectedPurePlay.toFixed(0)}B`, padding + sectionWidth/2, totalsY + 35, {
+    const projectedCybersecurity = pureCybersecurityEstimate * Math.pow(1.15, 5)  // 15% CAGR for cybersecurity
+    const projectedText = projectedCybersecurity >= 1000 
+      ? `2030 Security Projected: $${(projectedCybersecurity/1000).toFixed(1)}T`
+      : `2030 Security Projected: $${projectedCybersecurity.toFixed(0)}B`
+    this.renderer.drawText(projectedText, padding + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
       color: brandConfig.colors.neutral[600],  // SAME AS AI BUBBLE

@@ -1,34 +1,34 @@
-Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes
-Broadcom,Public,AVGO,1360,Includes Symantec portfolio
-Cisco,Public,CSCO,269,Major security portfolio
-Palo Alto Networks,Public,PANW,124,Largest pure-play cybersecurity
-CrowdStrike,Public,CRWD,100,Endpoint protection leader
-Fortinet,Public,FTNT,59.4,Network security
-Cloudflare,Public,NET,70,Web security and CDN
-Datadog,Public,DDOG,45,Observability + security
-Zscaler,Public,ZS,42,Cloud security
-CyberArk,Public,CYBR,22,Identity security
-Check Point,Public,CHKP,20,Network security
-Gen Digital,Public,GEN,18,Norton/Avast consumer security
-Okta,Public,OKTA,16,Identity management
-SentinelOne,Public,S,5.7,AI-powered endpoint security
-Qualys,Public,QLYS,4.8,Cloud security compliance
-Tenable,Public,TENB,3.6,Vulnerability management
-Rapid7,Public,RPD,1.3,Security analytics
-Tanium,Private,,6,Endpoint security (profitable)
-Snyk,Private,,4,Developer security
-Netskope,Private,,5,SASE platform (IPO filed Aug 2025)
-1Password,Private,,7.4,Password management
-OneTrust,Private,,5,Privacy/compliance platform
-Abnormal Security,Private,,5.1,Email security
-Cato Networks,Private,,4.8,SASE platform
-Arctic Wolf,Private,,4.5,MDR/SOC services
-Cohesity,Private,,9,Data security (merged w/ Veritas)
-Illumio,Private,,1.5,Zero trust segmentation
-Transmit Security,Private,,1.1,Identity management
-SonicWall,Private,,1.05,Network security
-Druva,Private,,1,Cloud data protection
-Orca Security,Private,,0.9,Cloud security
-Signifyd,Private,,500,E-commerce fraud protection
-Island,Private,,4.8,Enterprise browser
-Vectra AI,Private,,500,AI threat detection
+Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes,% of mkt cap attributable to cybersecurity,,,
+Broadcom,Public,AVGO,1360,Includes Symantec portfolio,2.8%,38.08,3%, 0.6294 
+Cisco,Public,CSCO,269,Major security portfolio,14.8%,77.892,5%, 0.7539 
+Palo Alto Networks,Public,PANW,124,Largest pure-play cybersecurity,100.0%,201.892,12%, 0.8113 
+CrowdStrike,Public,CRWD,100,Endpoint protection leader,100.0%,301.892,16%, 0.8576 
+Fortinet,Public,FTNT,59.4,Network security,100.0%,361.292,19%, 0.8850 
+Cloudflare,Public,NET,70,Web security and CDN,65.0%,406.792,21%, 0.9174 
+Datadog,Public,DDOG,45,Observability + security,25.0%,418.042,21%, 0.9383 
+Zscaler,Public,ZS,42,Cloud security,100.0%,460.042,22%, 0.9577 
+CyberArk,Public,CYBR,22,Identity security,100.0%,482.042,23%, 0.9679 
+Check Point,Public,CHKP,20,Network security,100.0%,502.042,24%, 0.9771 
+Gen Digital,Public,GEN,18,Norton/Avast consumer security,100.0%,520.042,24%, 0.9855 
+Okta,Public,OKTA,16,Identity management,100.0%,536.042,25%, 0.9929 
+SentinelOne,Public,S,5.7,AI-powered endpoint security,100.0%,541.742,25%, 0.9955 
+Qualys,Public,QLYS,4.8,Cloud security compliance,100.0%,546.542,25%, 0.9977 
+Tenable,Public,TENB,3.6,Vulnerability management,100.0%,550.142,25%, 0.9994 
+Rapid7,Public,RPD,1.3,Security analytics,100.0%,551.442,26%, 1.0000 
+Tanium,Private,,6,Endpoint security (profitable),,,,
+Snyk,Private,,4,Developer security,,,,
+Netskope,Private,,5,SASE platform (IPO filed Aug 2025),,,,
+1Password,Private,,7.4,Password management,,,,
+OneTrust,Private,,5,Privacy/compliance platform,,,,
+Abnormal Security,Private,,5.1,Email security,,,,
+Cato Networks,Private,,4.8,SASE platform,,,,
+Arctic Wolf,Private,,4.5,MDR/SOC services,,,,
+Cohesity,Private,,9,Data security (merged w/ Veritas),,,,
+Illumio,Private,,1.5,Zero trust segmentation,,,,
+Transmit Security,Private,,1.1,Identity management,,,,
+SonicWall,Private,,1.05,Network security,,,,
+Druva,Private,,1,Cloud data protection,,,,
+Orca Security,Private,,0.9,Cloud security,,,,
+Signifyd,Private,,500,E-commerce fraud protection,,,,
+Island,Private,,4.8,Enterprise browser,,,,
+Vectra AI,Private,,500,AI threat detection,,,,

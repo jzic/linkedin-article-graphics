@@ -78,14 +78,14 @@ export class RoboticsBubbleChartVisualization {
     
     // Define companies with their data
     const publicCompanies: RoboticsCompany[] = [
-      { name: 'Intuitive Surgical', value: 202, ticker: 'ISRG', logo: 'intuitive-surgical.png' },
-      { name: 'Keyence', value: 134, ticker: '6861.T', logo: 'keyence.png' },
-      { name: 'ABB', value: 87, ticker: 'ABB', logo: 'abb.png' },
-      { name: 'Fanuc', value: 45, ticker: '6954.T', logo: 'fanuc.png' },
-      { name: 'Rockwell Automation', value: 37, ticker: 'ROK', logo: 'rockwell-automation.png' },
-      { name: 'Zebra Technologies', value: 24, ticker: 'ZBRA', logo: 'zebra-technologies.png' },
-      { name: 'Teradyne', value: 21, ticker: 'TER', logo: 'teradyne.png' },
-      { name: 'Yaskawa', value: 17, ticker: '6506.T', logo: 'yaskawa.png' },
+      { name: 'Intuitive Surgical', value: 168, ticker: 'ISRG', logo: 'intuitive-surgical.png' },
+      { name: 'Keyence', value: 93, ticker: '6861.T', logo: 'keyence.png' },
+      { name: 'ABB', value: 122, ticker: 'ABB', logo: 'abb.png' },
+      { name: 'Fanuc', value: 28, ticker: '6954.T', logo: 'fanuc.png' },
+      { name: 'Rockwell Automation', value: 39, ticker: 'ROK', logo: 'rockwell-automation.png' },
+      { name: 'Zebra Technologies', value: 16, ticker: 'ZBRA', logo: 'zebra-technologies.png' },
+      { name: 'Teradyne', value: 19, ticker: 'TER', logo: 'teradyne.png' },
+      { name: 'Yaskawa', value: 5.4, ticker: '6506.T', logo: 'yaskawa.png' },
       { name: 'Omron', value: 5.2, ticker: '6645.T', logo: 'omron.png' },
       { name: 'Cognex', value: 7.4, ticker: 'CGNX', logo: 'cognex.png' },
       { name: 'PROCEPT BioRobotics', value: 2.3, ticker: 'PRCT', logo: 'procept-biorobotics.png' },
@@ -667,11 +667,14 @@ export class RoboticsBubbleChartVisualization {
     const publicTotal = this.publicBubbles.reduce((sum, b) => sum + b.company.value, 0)
     const privateTotal = this.privateBubbles.reduce((sum, b) => sum + b.company.value, 0)
     
+    // Pure robotics exposure (from market_cap_attribution_by_sector.md)
+    const pureRoboticsEstimate = 408 // Pre-calculated pure robotics value from attribution analysis
+    
     // PUBLIC COMPANIES - EXACT STYLING AS AI BUBBLE
-    // Line 1: Total Market Cap: $541B
+    // Line 1: Total Market Cap: $507B | Pure Robotics Value: $408B
     const publicLine1 = publicTotal >= 1000
-      ? `Total Market Cap: $${(publicTotal/1000).toFixed(0)}T`
-      : `Total Market Cap: $${publicTotal.toFixed(0)}B`
+      ? `Total Market Cap: $${(publicTotal/1000).toFixed(0)}T | Pure Robotics Value: $${pureRoboticsEstimate}B`
+      : `Total Market Cap: $${publicTotal.toFixed(0)}B | Pure Robotics Value: $${pureRoboticsEstimate}B`
     
     this.renderer.drawText(publicLine1, padding + sectionWidth/2, totalsY, {
       fontSize: 36,  // SAME AS AI BUBBLE

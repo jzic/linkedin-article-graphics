@@ -681,10 +681,10 @@ export class SpaceTechBubbleChartVisualization {
     const privateTotal = this.privateBubbles.reduce((sum, b) => sum + b.company.value, 0)
     
     // Pure space exposure (from Space Tech Map calculations)
-    const pureSpaceEstimate = 225 // Pre-calculated pure space value
+    const pureSpaceEstimate = 193 // Pre-calculated pure space value from market_cap_attribution_by_sector.md
     
     // PUBLIC COMPANIES - EXACT STYLING AS AI BUBBLE
-    // Line 1: Total Market Cap: $1T | Pure Space Value: $225B
+    // Line 1: Total Market Cap: $1T | Pure Space Value: $193B
     const publicLine1 = publicTotal >= 1000
       ? `Total Market Cap: $${(publicTotal/1000).toFixed(0)}T | Pure Space Value: $${pureSpaceEstimate}B`
       : `Total Market Cap: $${publicTotal.toFixed(0)}B | Pure Space Value: $${pureSpaceEstimate}B`

@@ -1,25 +1,25 @@
-Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes
-Nvidia,Public,NVDA,4280,GPU computing for quantum simulation
-Microsoft,Public,MSFT,3410,Azure Quantum cloud platform
-Google,Public,GOOGL,1850,Quantum AI and Sycamore processor
-Amazon,Public,AMZN,1050,AWS Braket quantum cloud
-IBM,Public,IBM,226,Quantum Network and processors
-Honeywell,Public,HON,139,Quantum solutions division
-Intel,Public,INTC,106,Quantum computing research
-IonQ,Public,IONQ,12,Pure-play quantum computing
-D-Wave,Public,QBTS,5.11,Quantum annealing systems
-Rigetti,Public,RGTI,4.88,Quantum cloud services
-Quantum Computing Inc,Public,QUBT,2.32,Quantum software
-Arqit Quantum,Public,ARQQ,0.385,Quantum encryption
-PsiQuantum,Private,,6,Photonic quantum computing
-Atom Computing,Private,,0.29,Neutral atom quantum
-Xanadu,Private,,1,Photonic quantum
-QuEra,Private,,1,Neutral atom arrays
-Infleqtion,Private,,0.707,Cold atom quantum
-Oxford Quantum Circuits,Private,,0.5,Superconducting quantum
-Quantum Machines,Private,,0.7,Quantum control systems
-SandboxAQ,Private,,5.75,Quantum + AI applications
-Pasqal,Private,,0.594,Neutral atom quantum
-Quantum Motion,Private,,0.02,Silicon quantum
-Q-CTRL,Private,,0.253,Quantum control software
-Classiq,Private,,0.156,Quantum software platform
+Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes,% of mkt cap attributable to Space,,,
+Nvidia,Public,NVDA,4280,GPU computing for quantum simulation,0.10%,4.28,0.10%, 0.3861 
+Microsoft,Public,MSFT,3410,Azure Quantum cloud platform,0.15%,9.395,0.12%, 0.6937 
+Google,Public,GOOGL,1850,Quantum AI and Sycamore processor,0.20%,13.095,0.14%, 0.8606 
+Amazon,Public,AMZN,1050,AWS Braket quantum cloud,0.08%,13.935,0.13%, 0.9553 
+IBM,Public,IBM,226,Quantum Network and processors,0.44%,14.9294,0.14%, 0.9757 
+Honeywell,Public,HON,139,Quantum solutions division,0.70%,15.9024,0.15%, 0.9882 
+Intel,Public,INTC,106,Quantum computing research,0.30%,16.2204,0.15%, 0.9978 
+IonQ,Public,IONQ,12,Pure-play quantum computing,95.00%,27.6204,0.25%, 0.9989 
+D-Wave,Public,QBTS,5.11,Quantum annealing systems,92.00%,32.3216,0.29%, 0.9993 
+Rigetti,Public,RGTI,4.88,Quantum cloud services,94.00%,36.9088,0.33%, 0.9998 
+Quantum Computing Inc,Public,QUBT,2.32,Quantum software,90.00%,38.9968,0.35%, 1.0000 
+Arqit Quantum,Public,ARQQ,0.385,Quantum encryption,88.00%,39.3356,0.35%, 1.0000 
+PsiQuantum,Private,,6,Photonic quantum computing,,,,
+Atom Computing,Private,,0.29,Neutral atom quantum,,,,
+Xanadu,Private,,1,Photonic quantum,,,,
+QuEra,Private,,1,Neutral atom arrays,,,,
+Infleqtion,Private,,0.707,Cold atom quantum,,,,
+Oxford Quantum Circuits,Private,,0.5,Superconducting quantum,,,,
+Quantum Machines,Private,,0.7,Quantum control systems,,,,
+SandboxAQ,Private,,5.75,Quantum + AI applications,,,,
+Pasqal,Private,,0.594,Neutral atom quantum,,,,
+Quantum Motion,Private,,0.02,Silicon quantum,,,,
+Q-CTRL,Private,,0.253,Quantum control software,,,,
+Classiq,Private,,0.156,Quantum software platform,,,,

@@ -698,11 +698,14 @@ export class DefenseTechBubbleChartVisualization {
     const publicTotal = this.publicBubbles.reduce((sum, b) => sum + b.company.value, 0)
     const privateTotal = this.privateBubbles.reduce((sum, b) => sum + b.company.value, 0)
     
-    // PUBLIC COMPANIES - With defense allocation
-    const defenseAllocation = 0.35  // 35% of market cap is defense-related
-    const publicDefenseValue = publicTotal * defenseAllocation
+    // Pure defense exposure (from market_cap_attribution_by_sector.md calculations)
+    const pureDefenseEstimate = 989 // Pre-calculated pure defense value from attribution analysis
     
-    const publicLine1 = `Total Market Cap: $${(publicTotal/1000).toFixed(1)}T | Defense Value: $${(publicDefenseValue/1000).toFixed(1)}T`
+    // PUBLIC COMPANIES - EXACT STYLING AS AI BUBBLE
+    // Line 1: Total Market Cap: $1.6T | Pure Defense Value: $989B
+    const publicLine1 = publicTotal >= 1000
+      ? `Total Market Cap: $${(publicTotal/1000).toFixed(1)}T | Pure Defense Value: $${pureDefenseEstimate}B`
+      : `Total Market Cap: $${publicTotal.toFixed(0)}B | Pure Defense Value: $${pureDefenseEstimate}B`
     
     this.renderer.drawText(publicLine1, padding + sectionWidth/2, totalsY, {
       fontSize: 36,  // SAME AS AI BUBBLE
@@ -712,7 +715,7 @@ export class DefenseTechBubbleChartVisualization {
     })
     
     // Line 2: 2030 Projected defense value
-    const projectedDefenseValue = publicDefenseValue * Math.pow(1.05, 5)  // 5% annual growth for legacy defense
+    const projectedDefenseValue = pureDefenseEstimate * Math.pow(1.05, 5)  // 5% annual growth for legacy defense
     this.renderer.drawText(`2030 Defense Projected: $${(projectedDefenseValue/1000).toFixed(1)}T`, padding + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
