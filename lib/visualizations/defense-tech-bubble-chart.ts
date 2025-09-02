@@ -714,9 +714,9 @@ export class DefenseTechBubbleChartVisualization {
       align: 'center',
     })
     
-    // Line 2: 2030 Projected defense value
-    const projectedDefenseValue = pureDefenseEstimate * Math.pow(1.05, 5)  // 5% annual growth for legacy defense
-    this.renderer.drawText(`2030 Defense Projected: $${(projectedDefenseValue/1000).toFixed(1)}T`, padding + sectionWidth/2, totalsY + 35, {
+    // Line 2: 2030 Projected defense value (bottom-up calculation)
+    const publicDefenseProjected = 1823  // $1.823T bottom-up calculation (13.1% implied CAGR)
+    this.renderer.drawText(`2030 Defense Projected: $${(publicDefenseProjected/1000).toFixed(1)}T`, padding + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
       color: brandConfig.colors.neutral[600],  // SAME AS AI BUBBLE
@@ -731,11 +731,11 @@ export class DefenseTechBubbleChartVisualization {
       align: 'center',
     })
     
-    // Private projection with higher growth rate (defense tech growing faster)
-    const privateProjected = privateTotal * Math.pow(1.40, 5)  // 40% annual growth
-    const privateProjectedText = privateProjected >= 1000 
-      ? `2030 Projected: $${(privateProjected/1000).toFixed(1)}T`
-      : `2030 Projected: $${privateProjected.toFixed(0)}B`
+    // Private projection (bottom-up calculation)
+    const privateDefenseProjected = 330  // $330B bottom-up calculation (39.7% implied CAGR)
+    const privateProjectedText = privateDefenseProjected >= 1000 
+      ? `2030 Projected: $${(privateDefenseProjected/1000).toFixed(1)}T`
+      : `2030 Projected: $${privateDefenseProjected.toFixed(0)}B`
     
     this.renderer.drawText(privateProjectedText, centerX + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
@@ -744,7 +744,32 @@ export class DefenseTechBubbleChartVisualization {
       align: 'center',
     })
     
+    // Methodology footnote for private section (similar to AI bubble)
+    const privateMethodologyY = totalsY + 57  // Same positioning as AI bubble
+    const privateMethodologyText = '2030 projections: Company-by-company growth rates applied based on revenue trajectories and market position'
+    
+    this.renderer.drawText(privateMethodologyText, centerX + sectionWidth/2, privateMethodologyY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
+    
     // NO SOURCE NOTE - Logo at top is sufficient
+    
+    // Methodology footnote - positioned under public companies section only
+    const footnoteY = totalsY + 57  // Same positioning as AI bubble
+    const footnoteText = 'Pure Defense Value: Analyzed each company\'s defense revenue contribution, deconstructed market caps to calculate % attributable to defense'
+    const publicSectionCenterX = padding + sectionWidth/2
+    
+    this.renderer.drawText(footnoteText, publicSectionCenterX, footnoteY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
   }
 
   private async loadEquiamLogo() {

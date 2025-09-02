@@ -686,9 +686,9 @@ export class QuantumBubbleChartVisualization {
       align: 'center',
     })
     
-    // Line 2: 2030 Projected for pure quantum value
-    const projectedQuantum = pureQuantumEstimate * Math.pow(2.5, 5)  // 150% annual growth for quantum
-    this.renderer.drawText(`2030 Quantum Projected: $${projectedQuantum.toFixed(0)}B`, padding + sectionWidth/2, totalsY + 35, {
+    // Line 2: 2030 Projected quantum value (bottom-up calculation)
+    const publicQuantumProjected = 195.5  // $195.5B bottom-up calculation (37.8% implied CAGR)
+    this.renderer.drawText(`2030 Quantum Projected: $${publicQuantumProjected.toFixed(0)}B`, padding + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
       color: brandConfig.colors.neutral[600],  // SAME AS AI BUBBLE
@@ -703,11 +703,11 @@ export class QuantumBubbleChartVisualization {
       align: 'center',
     })
     
-    // Private projection with extreme growth rate (quantum is early stage)
-    const privateProjected = privateTotal * Math.pow(2, 5)  // 100% annual growth (doubling)
-    const privateProjectedText = privateProjected >= 1000 
-      ? `2030 Projected: $${(privateProjected/1000).toFixed(1)}T`
-      : `2030 Projected: $${privateProjected.toFixed(0)}B`
+    // Private projection (bottom-up calculation)
+    const privateQuantumProjected = 131  // $131B bottom-up calculation (51.4% implied CAGR)
+    const privateProjectedText = privateQuantumProjected >= 1000 
+      ? `2030 Projected: $${(privateQuantumProjected/1000).toFixed(1)}T`
+      : `2030 Projected: $${privateQuantumProjected.toFixed(0)}B`
     
     this.renderer.drawText(privateProjectedText, centerX + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
@@ -716,7 +716,32 @@ export class QuantumBubbleChartVisualization {
       align: 'center',
     })
     
+    // Methodology footnote for private section (same as defense tech)
+    const privateMethodologyY = totalsY + 57  // Same positioning as other bubbles
+    const privateMethodologyText = '2030 projections: Company-by-company growth rates applied based on revenue trajectories and market position'
+    
+    this.renderer.drawText(privateMethodologyText, centerX + sectionWidth/2, privateMethodologyY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
+    
     // NO SOURCE NOTE - Logo at top is sufficient
+    
+    // Methodology footnote - positioned under public companies section only
+    const footnoteY = totalsY + 57  // Same positioning as AI bubble
+    const footnoteText = 'Pure Quantum Value: Analyzed each company\'s quantum revenue contribution, deconstructed market caps to calculate % attributable to quantum'
+    const publicSectionCenterX = padding + sectionWidth/2
+    
+    this.renderer.drawText(footnoteText, publicSectionCenterX, footnoteY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
   }
 
   private async loadEquiamLogo() {

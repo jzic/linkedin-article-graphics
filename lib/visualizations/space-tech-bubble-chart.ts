@@ -696,8 +696,11 @@ export class SpaceTechBubbleChartVisualization {
       align: 'center',
     })
     
-    // Line 2: 2030 Projected Space Value: $688B
-    this.renderer.drawText('2030 Projected Space Value: $688B', padding + sectionWidth/2, totalsY + 35, {
+    // Line 2: 2030 Projected Space Value - bottom-up calculation from Space Tech 5-year growth analysis
+    // Boeing: $21.2B → $29B; Lockheed: $19.1B → $31B; RTX: $16.9B → $24B; Northrop: $27.7B → $49B
+    // Rocket Lab: $23B → $115B; AST SpaceMobile: $17.3B → $150B; Others: ~$68B → $97B
+    const publicSpaceProjected = 495 // $495B bottom-up calculation (20.7% implied CAGR)
+    this.renderer.drawText(`2030 Projected Space Value: $${publicSpaceProjected}B`, padding + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
       color: brandConfig.colors.neutral[600],  // SAME AS AI BUBBLE
@@ -713,8 +716,12 @@ export class SpaceTechBubbleChartVisualization {
       align: 'center',
     })
     
-    // Line 2: 2030 Projected: $2.7T - EXACT COLOR FROM AI BUBBLE
-    this.renderer.drawText('2030 Projected: $2.7T', centerX + sectionWidth/2, totalsY + 35, {
+    // Line 2: 2030 Projected - bottom-up calculation from Space Tech 5-year growth analysis
+    // SpaceX: $400B → $2,250B; Blue Origin: $75B → $250B; Sierra Space: $5.3B → $32.5B
+    // Relativity: $6B → $40B; Axiom: $2.2B → $20B; Others: $3.5B → $17.5B
+    const privateSpaceProjected = 2610 // $2.61T bottom-up calculation (39.6% implied CAGR)
+    const privateProjectedText = `2030 Projected: $${(privateSpaceProjected/1000).toFixed(1)}T`
+    this.renderer.drawText(privateProjectedText, centerX + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
       color: brandUtils.hexToRgba(brandConfig.colors.primary[600], 0.9),  // EXACT SAME AS AI BUBBLE - 90% opacity
@@ -722,6 +729,31 @@ export class SpaceTechBubbleChartVisualization {
     })
     
     // NO SOURCE NOTE - Logo at top is sufficient
+    
+    // Methodology footnote - positioned under public companies section only
+    const footnoteY = totalsY + 57  // Same positioning as AI bubble
+    const footnoteText = 'Pure Space Value: Analyzed each company\'s space revenue contribution, deconstructed market caps to calculate % attributable to space'
+    const publicSectionCenterX = padding + sectionWidth/2
+    
+    this.renderer.drawText(footnoteText, publicSectionCenterX, footnoteY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
+    
+    // Add private footnote explaining bottom-up projections
+    const privateSectionCenterX = centerX + sectionWidth/2
+    const privateFootnoteText = '2030 projections: Company-by-company growth rates applied based on revenue trajectories and market position'
+    
+    this.renderer.drawText(privateFootnoteText, privateSectionCenterX, footnoteY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
   }
 
   private async loadEquiamLogo() {

@@ -1,35 +1,35 @@
-Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes,% of mkt cap attributable to defense,,,
-Palantir,Public,PLTR,368,Defense analytics platform,45%,165.6,45%, 0.2329 
-RTX,Public,RTX,211,Raytheon Technologies,60%,292.2,50%, 0.3664 
-Boeing,Public,BA,177,Defense and aerospace,45%,371.85,49%, 0.4784 
-Honeywell,Public,HON,139,Defense systems,20%,399.65,45%, 0.5663 
-Lockheed Martin,Public,LMT,106,Defense contractor,93%,498.23,50%, 0.6334 
-General Dynamics,Public,GD,87.4,Defense systems,75%,563.78,52%, 0.6887 
-Northrop Grumman,Public,NOC,84,Defense technology,99%,646.94,55%, 0.7419 
-BAE Systems,Public,LON: BA,70.4,UK defense contractor,98%,715.932,58%, 0.7864 
-Thales,Public,HO.PA,54,European defense,65%,751.032,58%, 0.8206 
-L3Harris,Public,LHX,52,Communications and defense,90%,797.832,59%, 0.8535 
-Leonardo,Public,BIT: LDO,33.1,Italian defense,83%,825.305,60%, 0.8745 
-Rheinmetall,Public,ETR: RHM,90.5,German defense,80%,897.705,61%, 0.9317 
-Leidos,Public,LDOS,23.5,Defense IT,87%,918.15,61%, 0.9466 
-Booz Allen,Public,BAH,13.7,Defense consulting,98%,931.576,62%, 0.9553 
-Textron,Public,TXT,14.5,Defense systems,45%,938.101,62%, 0.9644 
-Elbit Systems,Public,ESLT,22.8,Israeli defense,95%,959.761,62%, 0.9789 
-CACI,Public,CACI,10.7,Defense IT services,95%,969.926,62%, 0.9856 
-Huntington Ingalls,Public,HII,10.6,Shipbuilding,100%,980.526,63%, 0.9923 
-SAIC,Public,SAIC,5.6,Defense technology,98%,986.014,63%, 0.9959 
-KBR,Public,KBR,6.5,Defense services,40%,988.614,63%, 1.0000 
-Anduril,Private,,40,Autonomous defense systems,,,,
-Applied Intuition,Private,,15,Defense simulation,,,,
-Shield AI,Private,,5.5,AI pilot systems,,,,
-Saronic,Private,,4,Autonomous vessels,,,,
-Castelion,Private,,2.5,Defense manufacturing,,,,
-Skydio,Private,,2.5,Military drones,,,,
-Epirus,Private,,1.1,Counter-drone systems,,,,
-True Anomaly,Private,,0.944,Space defense,,,,
-Vannevar Labs,Private,,0.575,Defense intelligence,,,,
-Mach Industries,Private,,0.335,Hydrogen systems,,,,
-Hadrian,Private,,0.45,Defense manufacturing,,,,
-HawkEye360,Private,,0.4,RF analytics,,,,
-CHAOS Industries,Private,,2,Defense systems,,,,
-Primer,Private,,0.27,Defense NLP,,,,
+Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes,% of mkt cap attributable to defense,,,,,,,
+Palantir,Public,PLTR,368,Defense analytics platform,45%,165.6,45%, 0.2329 ,,,,"Palantir, "
+RTX,Public,RTX,211,Raytheon Technologies,60%,292.2,50%, 0.3664 ,,,,"Palantir, RTX, "
+Boeing,Public,BA,177,Defense and aerospace,45%,371.85,49%, 0.4784 ,,,,"Palantir, RTX, Boeing, "
+Honeywell,Public,HON,139,Defense systems,20%,399.65,45%, 0.5663 ,,,,"Palantir, RTX, Boeing, Honeywell, "
+Lockheed Martin,Public,LMT,106,Defense contractor,93%,498.23,50%, 0.6334 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, "
+General Dynamics,Public,GD,87.4,Defense systems,75%,563.78,52%, 0.6887 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, "
+Northrop Grumman,Public,NOC,84,Defense technology,99%,646.94,55%, 0.7419 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, "
+BAE Systems,Public,LON: BA,70.4,UK defense contractor,98%,715.932,58%, 0.7864 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, "
+Thales,Public,HO.PA,54,European defense,65%,751.032,58%, 0.8206 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, "
+L3Harris,Public,LHX,52,Communications and defense,90%,797.832,59%, 0.8535 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, "
+Leonardo,Public,BIT: LDO,33.1,Italian defense,83%,825.305,60%, 0.8745 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, "
+Rheinmetall,Public,ETR: RHM,90.5,German defense,80%,897.705,61%, 0.9317 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, "
+Leidos,Public,LDOS,23.5,Defense IT,87%,918.15,61%, 0.9466 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, Leidos, "
+Booz Allen,Public,BAH,13.7,Defense consulting,98%,931.576,62%, 0.9553 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, Leidos, Booz Allen, "
+Textron,Public,TXT,14.5,Defense systems,45%,938.101,62%, 0.9644 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, Leidos, Booz Allen, Textron, "
+Elbit Systems,Public,ESLT,22.8,Israeli defense,95%,959.761,62%, 0.9789 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, Leidos, Booz Allen, Textron, Elbit Systems, "
+CACI,Public,CACI,10.7,Defense IT services,95%,969.926,62%, 0.9856 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, Leidos, Booz Allen, Textron, Elbit Systems, CACI, "
+Huntington Ingalls,Public,HII,10.6,Shipbuilding,100%,980.526,63%, 0.9923 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, Leidos, Booz Allen, Textron, Elbit Systems, CACI, Huntington Ingalls, "
+SAIC,Public,SAIC,5.6,Defense technology,98%,986.014,63%, 0.9959 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, Leidos, Booz Allen, Textron, Elbit Systems, CACI, Huntington Ingalls, SAIC, "
+KBR,Public,KBR,6.5,Defense services,40%,988.614,63%, 1.0000 ,,,,"Palantir, RTX, Boeing, Honeywell, Lockheed Martin, General Dynamics, Northrop Grumman, BAE Systems, Thales, L3Harris, Leonardo, Rheinmetall, Leidos, Booz Allen, Textron, Elbit Systems, CACI, Huntington Ingalls, SAIC, KBR, "
+Anduril,Private,,40,Autonomous defense systems,,,,,,,,"Anduril, "
+Applied Intuition,Private,,15,Defense simulation,,,,,,,,"Anduril, Applied Intuition, "
+Shield AI,Private,,5.5,AI pilot systems,,,,,,,,"Anduril, Applied Intuition, Shield AI, "
+Saronic,Private,,4,Autonomous vessels,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, "
+Castelion,Private,,2.5,Defense manufacturing,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, "
+Skydio,Private,,2.5,Military drones,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, "
+Epirus,Private,,1.1,Counter-drone systems,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, Epirus, "
+True Anomaly,Private,,0.944,Space defense,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, Epirus, True Anomaly, "
+Vannevar Labs,Private,,0.575,Defense intelligence,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, Epirus, True Anomaly, Vannevar Labs, "
+Mach Industries,Private,,0.335,Hydrogen systems,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, Epirus, True Anomaly, Vannevar Labs, Mach Industries, "
+Hadrian,Private,,0.45,Defense manufacturing,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, Epirus, True Anomaly, Vannevar Labs, Mach Industries, Hadrian, "
+HawkEye360,Private,,0.4,RF analytics,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, Epirus, True Anomaly, Vannevar Labs, Mach Industries, Hadrian, HawkEye360, "
+CHAOS Industries,Private,,2,Defense systems,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, Epirus, True Anomaly, Vannevar Labs, Mach Industries, Hadrian, HawkEye360, CHAOS Industries, "
+Primer,Private,,0.27,Defense NLP,,,,,,,,"Anduril, Applied Intuition, Shield AI, Saronic, Castelion, Skydio, Epirus, True Anomaly, Vannevar Labs, Mach Industries, Hadrian, HawkEye360, CHAOS Industries, Primer, "

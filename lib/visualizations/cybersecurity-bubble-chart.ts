@@ -10,7 +10,7 @@ interface CybersecurityCompany {
 }
 
 interface Bubble {
-  company: QuantumCompany
+  company: CybersecurityCompany
   x: number
   y: number
   r: number
@@ -705,11 +705,11 @@ export class CybersecurityBubbleChartVisualization {
       align: 'center',
     })
     
-    // Line 2: 2030 Projected for cybersecurity market
-    const projectedCybersecurity = pureCybersecurityEstimate * Math.pow(1.15, 5)  // 15% CAGR for cybersecurity
-    const projectedText = projectedCybersecurity >= 1000 
-      ? `2030 Security Projected: $${(projectedCybersecurity/1000).toFixed(1)}T`
-      : `2030 Security Projected: $${projectedCybersecurity.toFixed(0)}B`
+    // Line 2: 2030 Projected cybersecurity value (bottom-up calculation)
+    const publicCyberProjected = 1086  // $1.086T bottom-up calculation (14.5% implied CAGR)
+    const projectedText = publicCyberProjected >= 1000 
+      ? `2030 Security Projected: $${(publicCyberProjected/1000).toFixed(1)}T`
+      : `2030 Security Projected: $${publicCyberProjected.toFixed(0)}B`
     this.renderer.drawText(projectedText, padding + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
@@ -725,11 +725,11 @@ export class CybersecurityBubbleChartVisualization {
       align: 'center',
     })
     
-    // Private projection with extreme growth rate (quantum is early stage)
-    const privateProjected = privateTotal * Math.pow(2, 5)  // 100% annual growth (doubling)
-    const privateProjectedText = privateProjected >= 1000 
-      ? `2030 Projected: $${(privateProjected/1000).toFixed(1)}T`
-      : `2030 Projected: $${privateProjected.toFixed(0)}B`
+    // Private projection (bottom-up calculation)
+    const privateCyberProjected = 250.5  // $250.5B bottom-up calculation (34.3% implied CAGR)
+    const privateProjectedText = privateCyberProjected >= 1000 
+      ? `2030 Projected: $${(privateCyberProjected/1000).toFixed(1)}T`
+      : `2030 Projected: $${privateCyberProjected.toFixed(0)}B`
     
     this.renderer.drawText(privateProjectedText, centerX + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
@@ -738,7 +738,32 @@ export class CybersecurityBubbleChartVisualization {
       align: 'center',
     })
     
+    // Methodology footnote for private section (same as other sectors)
+    const privateMethodologyY = totalsY + 57  // Same positioning as other bubbles
+    const privateMethodologyText = '2030 projections: Company-by-company growth rates applied based on revenue trajectories and market position'
+    
+    this.renderer.drawText(privateMethodologyText, centerX + sectionWidth/2, privateMethodologyY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
+    
     // NO SOURCE NOTE - Logo at top is sufficient
+    
+    // Methodology footnote - positioned under public companies section only
+    const footnoteY = totalsY + 57  // Same positioning as AI bubble
+    const footnoteText = 'Pure Cybersecurity Value: Analyzed each company\'s security revenue contribution, deconstructed market caps to calculate % attributable to security'
+    const publicSectionCenterX = padding + sectionWidth/2
+    
+    this.renderer.drawText(footnoteText, publicSectionCenterX, footnoteY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
   }
 
   private async loadEquiamLogo() {
@@ -756,7 +781,7 @@ export class CybersecurityBubbleChartVisualization {
     })
   }
 
-  private async preloadLogos(companies: QuantumCompany[]): Promise<void> {
+  private async preloadLogos(companies: CybersecurityCompany[]): Promise<void> {
     const logoPromises: Promise<void>[] = []
     
     companies.forEach((company) => {

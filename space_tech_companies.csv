@@ -1,23 +1,23 @@
 Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes,% of mkt cap attributable to Space,,,,
-RTX,Public,RTX,211,Raytheon Technologies,8%,16.88,8%, 0.2080 ,
-Boeing,Public,BA,177,Aerospace and defense,12%,38.12,10%, 0.3825 ,
-Airbus,Public,EPA: AIR,165,European aerospace,7%,49.67,9%, 0.5451 ,"165,314,768,500.00"
-Lockheed Martin,Public,LMT,106,Defense and space,18%,68.75,10%, 0.6496 ,
-General Dynamics,Public,GD,87.4,Defense contractor,4%,72.246,10%, 0.7358 ,"54,431,059,000.00"
-Northrop Grumman,Public,NOC,84,Space and defense systems,33%,99.966,12%, 0.8186 ,
-Thales,Public,EPA: HO,54,European space and defense,15%,108.066,12%, 0.8718 ,
-L3Harris,Public,LHX,52,Defense communications,20%,118.466,13%, 0.9231 ,"620,264,328.98"
-Rocket Lab,Public,RKLB,23,Small satellite launch,100%,141.466,15%, 0.9458 ,"91,070,000,000.00"
-AST SpaceMobile,Public,ASTS,17.3,Space-based cellular,100%,158.766,16%, 0.9628 ,
-EchoStar,Public,SATS,18.3,Satellite communications,85%,174.321,18%, 0.9809 ,
-Firefly,Public,FLY,6.6,Launch provider,100%,180.921,18%, 0.9874 ,
-Viasat,Public,VSAT,4.3,Satellite broadband,100%,185.221,18%, 0.9916 ,
-Iridium,Public,IRDM,2.7,Satellite constellation,100%,187.921,19%, 0.9943 ,
-Planet Labs,Public,PL,2.1,Earth observation,100%,190.021,19%, 0.9964 ,
-Intuitive Machines,Public,LUNR,1.6,Lunar missions,100%,191.621,19%, 0.9979 ,
-Redwire,Public,RDW,1.3,Space infrastructure,65%,192.466,19%, 0.9992 ,
-Astroscale,Public,TYO: 186A,0.62,Orbital debris removal,100%,193.086,19%, 0.9998 ,
-Virgin Galactic,Public,SPCE,0.18,Space tourism,100%,193.266,19%, 1.0000 ,
+RTX,Public,RTX,211,Raytheon Technologies,8%,16.88,8%,0.208,
+Boeing,Public,BA,177,Aerospace and defense,12%,38.12,10%,0.3825,
+Airbus,Public,EPA: AIR,165,European aerospace,7%,49.67,9%,0.5451,"165,314,768,500.00"
+Lockheed Martin,Public,LMT,106,Defense and space,18%,68.75,10%,0.6496,
+General Dynamics,Public,GD,87.4,Defense contractor,4%,72.246,10%,0.7358,"54,431,059,000.00"
+Northrop Grumman,Public,NOC,84,Space and defense systems,33%,99.966,12%,0.8186,
+Thales,Public,EPA: HO,54,European space and defense,15%,108.066,12%,0.8718,
+L3Harris,Public,LHX,52,Defense communications,20%,118.466,13%,0.9231,"620,264,328.98"
+Rocket Lab,Public,RKLB,23,Small satellite launch,100%,141.466,15%,0.9458,"91,070,000,000.00"
+AST SpaceMobile,Public,ASTS,17.3,Space-based cellular,100%,158.766,16%,0.9628,
+EchoStar,Public,SATS,18.3,Satellite communications,85%,174.321,18%,0.9809,
+Firefly,Public,FLY,6.6,Launch provider,100%,180.921,18%,0.9874,
+Viasat,Public,VSAT,4.3,Satellite broadband,100%,185.221,18%,0.9916,
+Iridium,Public,IRDM,2.7,Satellite constellation,100%,187.921,19%,0.9943,
+Planet Labs,Public,PL,2.1,Earth observation,100%,190.021,19%,0.9964,
+Intuitive Machines,Public,LUNR,1.6,Lunar missions,100%,191.621,19%,0.9979,
+Redwire,Public,RDW,1.3,Space infrastructure,65%,192.466,19%,0.9992,
+Astroscale,Public,TYO: 186A,0.62,Orbital debris removal,100%,193.086,19%,0.9998,
+Virgin Galactic,Public,SPCE,0.18,Space tourism,100%,193.266,19%,1,
 SpaceX,Private,,400,Launch and Starlink,,,,,
 Blue Origin,Private,,75,Launch and lunar systems,,,,,
 Sierra Space,Private,,5.3,Space habitats,,,,,

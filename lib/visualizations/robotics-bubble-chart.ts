@@ -43,6 +43,7 @@ export class RoboticsBubbleChartVisualization {
     'Cognex': '#009639',  // Cognex green
     'PROCEPT BioRobotics': '#00B4D8',  // PROCEPT cyan
     'Harmonic Drive': '#1E3A8A',  // Harmonic navy
+    'Tesla': '#E31937',  // Tesla red
     
     // Private companies
     'Skild AI': '#7ba79e',  // Updated seafoam green
@@ -78,6 +79,7 @@ export class RoboticsBubbleChartVisualization {
     
     // Define companies with their data
     const publicCompanies: RoboticsCompany[] = [
+      { name: 'Tesla', value: 1050, ticker: 'TSLA', logo: 'tesla.png' },
       { name: 'Intuitive Surgical', value: 168, ticker: 'ISRG', logo: 'intuitive-surgical.png' },
       { name: 'Keyence', value: 93, ticker: '6861.T', logo: 'keyence.png' },
       { name: 'ABB', value: 122, ticker: 'ABB', logo: 'abb.png' },
@@ -668,12 +670,12 @@ export class RoboticsBubbleChartVisualization {
     const privateTotal = this.privateBubbles.reduce((sum, b) => sum + b.company.value, 0)
     
     // Pure robotics exposure (from market_cap_attribution_by_sector.md)
-    const pureRoboticsEstimate = 408 // Pre-calculated pure robotics value from attribution analysis
+    const pureRoboticsEstimate = 434 // Pre-calculated pure robotics value from attribution analysis (updated with Tesla)
     
     // PUBLIC COMPANIES - EXACT STYLING AS AI BUBBLE
     // Line 1: Total Market Cap: $507B | Pure Robotics Value: $408B
     const publicLine1 = publicTotal >= 1000
-      ? `Total Market Cap: $${(publicTotal/1000).toFixed(0)}T | Pure Robotics Value: $${pureRoboticsEstimate}B`
+      ? `Total Market Cap: $${(publicTotal/1000).toFixed(1)}T | Pure Robotics Value: $${pureRoboticsEstimate}B`
       : `Total Market Cap: $${publicTotal.toFixed(0)}B | Pure Robotics Value: $${pureRoboticsEstimate}B`
     
     this.renderer.drawText(publicLine1, padding + sectionWidth/2, totalsY, {
@@ -683,8 +685,14 @@ export class RoboticsBubbleChartVisualization {
       align: 'center',
     })
     
-    // Line 2: 2030 Projected: $1.4T
-    this.renderer.drawText('2030 Projected: $1.4T', padding + sectionWidth/2, totalsY + 35, {
+    // Line 2: 2030 Projected - bottom-up calculation from Robotics 5-year growth analysis
+    // Tesla: $26.25B → $130B; Intuitive Surgical: $168B → $420B; Keyence: $88.35B → $175B; ABB: $48.8B → $86B
+    // Fanuc: $28B → $47B; Rockwell: $33.15B → $57B; Teradyne: $16.15B → $27B; Cognex: $7.4B → $15B; Others: ~$18B → $30B
+    const publicRoboticsProjected = 987 // $987B bottom-up calculation (17.8% implied CAGR with Tesla)
+    const publicProjectedText = publicRoboticsProjected >= 1000 
+      ? `2030 Projected: $${(publicRoboticsProjected/1000).toFixed(1)}T`
+      : `2030 Projected: $${publicRoboticsProjected}B`
+    this.renderer.drawText(publicProjectedText, padding + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
       color: brandConfig.colors.neutral[600],  // SAME AS AI BUBBLE
@@ -700,8 +708,11 @@ export class RoboticsBubbleChartVisualization {
       align: 'center',
     })
     
-    // Line 2: 2030 Projected: $120B - EXACT COLOR FROM AI BUBBLE
-    this.renderer.drawText('2030 Projected: $120B', centerX + sectionWidth/2, totalsY + 35, {
+    // Line 2: 2030 Projected - bottom-up calculation from Robotics 5-year growth analysis
+    // Figure AI: $39.5B → $250B; Zipline: $5.15B → $35B; Skild AI: $4.7B → $40B
+    // Physical Intelligence: $2.4B → $25B; Agility: $2.15B → $15B; Others: $2.8B → $20B
+    const privateRoboticsProjected = 385 // $385B bottom-up calculation (46.8% implied CAGR)
+    this.renderer.drawText(`2030 Projected: $${privateRoboticsProjected}B`, centerX + sectionWidth/2, totalsY + 35, {
       fontSize: 32,  // SAME AS AI BUBBLE
       fontWeight: 700,  // SAME AS AI BUBBLE
       color: brandUtils.hexToRgba(brandConfig.colors.primary[600], 0.9),  // EXACT SAME AS AI BUBBLE - 90% opacity
@@ -709,6 +720,31 @@ export class RoboticsBubbleChartVisualization {
     })
     
     // NO SOURCE NOTE - Logo at top is sufficient
+    
+    // Methodology footnote - positioned under public companies section only
+    const footnoteY = totalsY + 57  // Same positioning as AI bubble
+    const footnoteText = 'Pure Robotics Value: Analyzed each company\'s robotics revenue contribution, deconstructed market caps to calculate % attributable to robotics'
+    const publicSectionCenterX = padding + sectionWidth/2
+    
+    this.renderer.drawText(footnoteText, publicSectionCenterX, footnoteY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
+    
+    // Add private footnote explaining bottom-up projections
+    const privateSectionCenterX = centerX + sectionWidth/2
+    const privateFootnoteText = '2030 projections: Company-by-company growth rates applied based on revenue trajectories and market position'
+    
+    this.renderer.drawText(privateFootnoteText, privateSectionCenterX, footnoteY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
   }
 
   private async loadEquiamLogo() {

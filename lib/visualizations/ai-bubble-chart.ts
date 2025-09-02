@@ -701,9 +701,11 @@ export class AIBubbleChartVisualization {
       align: 'center',
     })
     
-    // 2030 projection for public
-    const yearsToProject = 5
-    const publicAIProjected = pureAIEstimate * Math.pow(1.175, yearsToProject)
+    // 2030 projection for public - bottom-up calculation from AI 5-year growth analysis
+    // NVIDIA: $3,766B → $9,400B; Microsoft: $561B → $2,100B; Google: $632.5B → $1,950B
+    // Apple: $102.3B → $250B; Amazon: $484B → $1,500B; Meta: $647.5B → $1,600B
+    // Others: ~$2,066B → ~$4,100B (15% CAGR)
+    const publicAIProjected = 20900 // $20.9T bottom-up calculation (19.2% implied CAGR)
     const publicLine2 = `2030 Projected AI Value: $${(publicAIProjected/1000).toFixed(1)}T`
     
     this.renderer.drawText(publicLine2, padding + sectionWidth/2, totalsY + 35, {
@@ -725,8 +727,10 @@ export class AIBubbleChartVisualization {
       align: 'center',
     })
     
-    // Private projection
-    const privateProjected = privateTotal * Math.pow(1.35, yearsToProject)
+    // Private projection - bottom-up calculation from AI 5-year growth analysis
+    // OpenAI: $400B → $1,750B; Anthropic: $170B → $600B; Databricks: $100B → $350B
+    // Others: $140B → $600B (various growth rates)
+    const privateProjected = 3300 // $3.3T bottom-up calculation (32.4% implied CAGR)
     const privateProjectedText = privateProjected >= 1000 
       ? `2030 Projected: $${(privateProjected/1000).toFixed(1)}T`
       : `2030 Projected: $${privateProjected.toFixed(0)}B`
@@ -736,6 +740,37 @@ export class AIBubbleChartVisualization {
       fontWeight: 700,
       color: brandUtils.hexToRgba(brandConfig.colors.primary[600], 0.9),
       align: 'center',
+    })
+    
+    // Methodology footnote - positioned under public companies section only
+    // totalsY + 35 is where the 2030 projection text is, so we need to be below that
+    const footnoteY = totalsY + 57  // Shifted up 3 pixels from 60
+    
+    // Condensed to one line
+    const footnoteText = 'Pure AI Value: Analyzed each company\'s AI revenue contribution, deconstructed market caps to calculate % attributable to AI'
+    
+    // Position footnote under the public companies section only (left half)
+    const publicSectionCenterX = padding + sectionWidth/2
+    
+    // Draw single line
+    this.renderer.drawText(footnoteText, publicSectionCenterX, footnoteY, {
+      fontSize: 13,  // Slightly smaller
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
+    })
+    
+    // Add private footnote explaining bottom-up projections
+    const privateSectionCenterX = centerX + sectionWidth/2
+    const privateFootnoteText = '2030 projections: Company-by-company growth rates applied based on revenue trajectories and market position'
+    
+    this.renderer.drawText(privateFootnoteText, privateSectionCenterX, footnoteY, {
+      fontSize: 13,
+      fontWeight: 400,
+      color: brandConfig.colors.neutral[500],
+      align: 'center',
+      fontFamily: brandConfig.typography.fontFamily.body,
     })
   }
 

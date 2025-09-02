@@ -1,4 +1,4 @@
-Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes,% of mkt cap attributable to Space,,,
+Company Name,Type,Ticker,Market Cap / Valuation (Billions USD),Notes,% of mkt cap attributable to quantum,,,
 Nvidia,Public,NVDA,4280,GPU computing for quantum simulation,0.10%,4.28,0.10%, 0.3861 
 Microsoft,Public,MSFT,3410,Azure Quantum cloud platform,0.15%,9.395,0.12%, 0.6937 
 Google,Public,GOOGL,1850,Quantum AI and Sycamore processor,0.20%,13.095,0.14%, 0.8606 
